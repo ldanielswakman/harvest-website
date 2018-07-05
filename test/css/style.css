@@ -13,6 +13,7 @@ body, html {
 }
 
 body {
+	min-width: 100vw;
 	min-height: 100vh;
 	color: #303846;
 	font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -37,8 +38,8 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 0;
-	width: 100vw !important;
-	height: 100vh !important;
+	width: 100vw;
+	height: 100vh;
 }
 
 h1, h2 {
@@ -191,7 +192,10 @@ a:hover {
 
 section {
 	position: relative;
-	padding: 7rem;
+	padding: 1.25rem;
+}
+@media screen and (min-width: 480px) {
+	section { padding: 7rem; }
 }
 section p {
 	max-width: 40rem;
