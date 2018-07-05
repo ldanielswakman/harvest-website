@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/Maison-Neue-Book.woff2') format('woff2'),
+       url('../fonts/Maison-Neue-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/Maison-Neue-Medium.woff2') format('woff2'),
+       url('../fonts/Maison-Neue-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../fonts/Maison-Neue-Bold.woff2') format('woff2'),
+       url('../fonts/Maison-Neue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 /* Reset */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 
@@ -9,7 +32,7 @@ body, html {
 	font-size: 112.5%;
 	background: #f5f6f7;
 	font-family: "Times", "Times New Roman", serif;
-	font-weight: 300;
+	font-weight: normal;
 }
 
 body {
@@ -46,6 +69,7 @@ h1, h2 {
 	font-weight: 700;
 	letter-spacing: 0.1rem;
 	color: #fff;
+	margin-bottom: 1rem;
 }
 h1 {
 	font-size: 1.25rem;
@@ -55,21 +79,31 @@ h1 {
 }
 h2 {
 	margin-top: 2rem;
-	font-size: 5rem;
-	line-height: 5rem;
+	font-size: 2rem;
+	line-height: 2rem;
 	/*opacity: 0.7;*/
 }
-
+@media screen and (min-width: 480px) {
+	h2 { font-size: 5rem; line-height: 5rem; }
+}
 h3 {
+	margin-top: -1rem;
+	margin-bottom: 1rem;
 	font-weight: 600;
-	font-size: 6rem;
-	margin-bottom: 0.5rem;
+	font-size: 3rem;
 	opacity: 0.1;
+}
+@media screen and (min-width: 480px) {
+	h3 {
+		margin-top: -3rem;
+		margin-bottom: 3rem;
+		font-size: 6rem;
+	}
 }
 h3 .number {
 	position: absolute;
 	left: -2rem;
-	font-weight: 300;
+	font-weight: normal;
 }
 
 a {
@@ -98,7 +132,7 @@ a:hover {
 	list-style: none;
 	line-height: 2rem;
 	font-size: 1.125rem;
-	font-weight: 300;
+	font-weight: normal;
 }
 .menu .intro-anchor {
 	margin-left: 2.3rem;
@@ -192,14 +226,14 @@ a:hover {
 
 section {
 	position: relative;
-	padding: 1.25rem;
+	padding: 2rem;
 }
 @media screen and (min-width: 480px) {
 	section { padding: 7rem; }
 }
 section p {
 	max-width: 40rem;
-	font-weight: 300;
+	font-weight: normal;
 	line-height: 2rem;
 	opacity: 0.8;
 }
@@ -212,8 +246,17 @@ blockquote {
 	border-left: 3px solid #d19f33;
 }
 blockquote p {
-	font-size: 2rem;
-	line-height: 2.5rem;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}	
+@media screen and (min-width: 480px) {
+	blockquote {
+		padding-left: 1.5rem;
+	}
+	blockquote p {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}	
 }
 
 
