@@ -52,6 +52,8 @@ function navOnScroll($target, $nav) {
     $target.filter('[id="' + active_id + '"]').addClass('isActive');
     // add active class to nav
     $nav.find('a').removeClass('isActive');
+    $nav.find('li').removeClass('isActive');
     $nav.find('a[href="#' + active_id + '"]').addClass('isActive');
+    $nav.find('a[href="#' + active_id + '"]').closest('li').addClass('isActive');
   }
 }

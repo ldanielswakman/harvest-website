@@ -48,28 +48,30 @@ body {
 	}
 }
 
-.title {
-	position: relative;
-	height: 100vh;
-	padding: 10vw;
-	user-select: none;
-	background: #151A1F;
+::-moz-selection {
+  background-color: #151A1F;
+  color: #fff;
+}
+::selection {
+  background-color: #151A1F;
+  color: #fff;
 }
 
-#intro > * {
-	position: relative;
-	z-index: 1;
+
+
+
+/* Utilities */
+.u-menu-padding {}
+@media screen and (min-width: 480px) {
+	.u-menu-padding {
+		padding-right: 12rem !important;
+	}
 }
 
-#intro canvas {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	width: 100vw;
-	height: 100vh;
-}
 
+
+
+/* Headlines */
 h1, h2 {
 	font-weight: 700;
 	letter-spacing: 0.1rem;
@@ -120,6 +122,14 @@ h3 .number {
 		left: -2rem;
 	}
 }
+h4 {
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #151A1F;
+}
+
+
 
 a {
 	text-decoration: none;
@@ -132,6 +142,9 @@ a:hover {
 	color: #d19f33;
 }
 
+strong {
+	font-weight: 600;
+}
 
 
 
@@ -142,6 +155,7 @@ a:hover {
 	right: 2rem;
 	bottom: 2rem;
 	z-index: 5;
+	min-width: 15rem;
 	margin-top: 3rem;
 	padding-left: 2rem;
 	list-style: none;
@@ -195,19 +209,40 @@ a:hover {
 	color: inherit;
 	text-decoration: none;
 	border-bottom: none;
+	letter-spacing: 0.02rem;
 }
 .menu a.isActive {
 	font-weight: bold;
+	color: #d19f33;
 }
 .menu a:focus {
 	outline: none;
 }
 .menu > li { counter-increment: customlistcounter; }
-.menu > li:before {
-	content: "0" counter(customlistcounter) "—";
+.menu > li:after {
+	content: "0" counter(customlistcounter);
+	float: left;
 	opacity: 0.25;
 }
+.menu > li:before {
+	content: "—";
+	display: inline-block;
+	margin-right: 0.5rem;
+	opacity: 0.25;
+	transition: all 0.3s ease-in-out;
+}
 .menu > li:first-child { counter-reset: customlistcounter; }
+.menu li.isActive {
+	color: #d19f33;
+}
+.menu li.isActive:before,
+.menu li.isActive:after {
+	opacity: 0.75;
+}
+.menu li.isActive:before {
+	margin-right: 0;
+	margin-left: 1.5rem;
+}
 
 
 
@@ -273,6 +308,8 @@ a:hover {
 }
 
 
+
+/* Section */
 section {
 	position: relative;
 	padding: 4rem 2rem 2rem;
@@ -290,16 +327,23 @@ section p {
 	section p { line-height: 2rem; }
 }
 
+
+
+/* Blockquote */
 blockquote {
+	position: relative;
 	max-width: 36rem;
-	margin-top: 2rem;
 	margin-bottom: 2rem;
 	padding-left: 1.5rem;
+	padding-right: 1rem;
 	border-left: 3px solid #d19f33;
 }
 blockquote p {
 	font-size: 1.25rem;
+	font-weight: bold;
 	line-height: 1.5rem;
+	color: #151A1F;
+	opacity: 1;
 }
 @media screen and (min-width: 360px) {
 	blockquote p {
@@ -312,26 +356,166 @@ blockquote p {
 		padding-left: 3rem;
 	}
 	blockquote p {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		line-height: 2.5rem;
 	}	
 }
 
 
 
+/* Item */
+.item {
+	position: relative;
+	margin-bottom: 3rem;
+	padding: 0 0.5rem;
+}
+.item:before {
+	content: "";
+	display: block;
+	width: 30%;
+	height: 3px;
+	margin-bottom: 1.5rem;
+	border-top: 3px solid #d19f33;
+}
+.item h4 {
+	margin-bottom: 1rem;
+}
+
+
+
+/* Section-specific: #intro */
+#intro {
+	height: 100vh;
+	padding: 10vw;
+	user-select: none;
+	background: #151A1F;
+}
+#intro > * {
+	position: relative;
+	z-index: 1;
+}
+#intro canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+}
+#intro .intro-link {
+	position: absolute;
+	bottom: 0;
+	left: 1rem;
+	display: block;
+	width: 4.5rem;
+	height: 4rem;
+	border: none;
+	text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+	#intro .intro-link {
+		left: 50%;
+		margin-left: -1.25rem;
+	}
+}
+#intro .intro-link svg {
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+
+	animation: animator 2s linear infinite;
+}
+#intro .intro-link svg:last-child {
+	animation-delay: 1s;
+}
+@keyframes animator {
+	0% {
+		transform: translateY(0);
+		opacity: 0;
+	}
+	25% {
+		transform: translateY(0);
+		opacity: 0.5;
+	}
+	30% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	50% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(1rem);
+		opacity: 0;
+	}
+}
 
 
 
 
+/* Section-specific: #services */
+section#services:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 48%;
+	height: 90%;
+}
+
+
+
+/* Section-specific: #story */
+section#story {
+	margin-bottom: 8rem;
+}
+section#story:before {
+	content: "";
+	position: absolute;
+	top: 11rem;
+	right: 0;
+	background: #fff;
+	width: 52%;
+	height: 60%;
+}
+
+
+
+/* Section-specific: #partnerships */
+section#partners:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 46%;
+	height: 100%;
+}
+
+
+
+
+/* Section-specific: #get-in-touch */
 #get-in-touch {
 	background: #D7B15B;
+}
+#get-in-touch blockquote {
+	margin-bottom: 2rem;
+	padding-left: 0;
+	border-left: none;
+}
+#get-in-touch blockquote p {
+	font-weight: 600;
+	color: #fff;
 }
 #get-in-touch h3 {
 	color: #d19f33;
 	opacity: 1;
 }
 #get-in-touch .colophon {
-	margin: 6rem -2rem -2rem;
+	margin: 3rem -2rem -2rem;
 	padding: 1rem 2rem;
 	background: rgba(21, 26, 31, 0.05);
 	font-size: 0.875rem;
@@ -342,4 +526,19 @@ blockquote p {
 		margin: 6rem -7rem -7rem;
 		padding: 1rem 7rem;
 	}
+}
+
+.button {
+	display: inline-block;
+	background: #fff;
+	margin-bottom: 2rem;
+	padding: 1rem 2rem;
+	border: none;
+	box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
+	transition: box-shadow 0.2s ease-in-out;
+	font-weight: 600;
+}
+.button:hover {
+	background: #f5f6f7;
+	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
 }
