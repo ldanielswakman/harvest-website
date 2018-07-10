@@ -29,7 +29,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 body, html {
 	min-height: 100vh;
 	margin: 0;
-	font-size: 112.5%;
 	background: #f5f6f7;
 	font-family: "Times", "Times New Roman", serif;
 	font-weight: normal;
@@ -38,9 +37,15 @@ body, html {
 body {
 	min-width: 100vw;
 	min-height: 100vh;
-	color: #303846;
 	font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-family: Maison Neue;
+	font-size: 100%;
+	color: #303846;
+}
+@media screen and (min-width: 360px) {
+	body {
+		font-size: 112.5%;
+	}
 }
 
 .title {
@@ -90,8 +95,13 @@ h3 {
 	margin-top: -1rem;
 	margin-bottom: 1rem;
 	font-weight: 600;
-	font-size: 3rem;
+	font-size: 1.5rem;
 	opacity: 0.1;
+}
+@media screen and (min-width: 360px) {
+	h3 {
+		font-size: 2.5rem;
+	}
 }
 @media screen and (min-width: 480px) {
 	h3 {
@@ -102,8 +112,13 @@ h3 {
 }
 h3 .number {
 	position: absolute;
-	left: -2rem;
+	left: -1.25rem;
 	font-weight: normal;
+}
+@media screen and (min-width: 480px) {
+	h3 .number {
+		left: -2rem;
+	}
 }
 
 a {
@@ -123,9 +138,9 @@ a:hover {
 
 
 .menu {
-	position: fixed;
-	right: 5rem;
-	bottom: 5rem;
+	position: absolute;
+	right: 2rem;
+	bottom: 2rem;
 	z-index: 5;
 	margin-top: 3rem;
 	padding-left: 2rem;
@@ -133,16 +148,48 @@ a:hover {
 	line-height: 2rem;
 	font-size: 1.125rem;
 	font-weight: normal;
+	/*color: #fff;
+	opacity: 0.5;*/
+}
+@media screen and (min-width: 480px) {
+	.menu {
+		position: fixed;
+		right: 5rem;
+		bottom: 5rem;
+	}
 }
 .menu .intro-anchor {
 	margin-left: 2.3rem;
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 	pointer-events: all;
+	color: #303846;
 }
 .menu .intro-anchor.isActive {
 	opacity: 0;
 	pointer-events: none;
+}
+@media screen and (max-width: 479px) {
+	.menu {
+		color: #f5f6f7;
+		opacity: 0.5;
+	}
+	.intro-anchor {
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		z-index: 6;
+		width: 3rem;
+		height: 3rem;
+		padding-top: 0.125rem;
+		border-radius: 50%;
+		border: none;
+		background: #fff;
+		box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+		line-height: 3rem;
+		text-align: center;
+		font-size: 1.5rem;
+	}	
 }
 .menu a {
 	color: inherit;
@@ -161,6 +208,8 @@ a:hover {
 	opacity: 0.25;
 }
 .menu > li:first-child { counter-reset: customlistcounter; }
+
+
 
 
 
@@ -226,7 +275,7 @@ a:hover {
 
 section {
 	position: relative;
-	padding: 2rem;
+	padding: 4rem 2rem 2rem;
 }
 @media screen and (min-width: 480px) {
 	section { padding: 7rem; }
@@ -234,24 +283,33 @@ section {
 section p {
 	max-width: 40rem;
 	font-weight: normal;
-	line-height: 2rem;
+	line-height: 1.75rem;
 	opacity: 0.8;
+}
+@media screen and (min-width: 360px) {
+	section p { line-height: 2rem; }
 }
 
 blockquote {
 	max-width: 36rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	padding-left: 3rem;
+	padding-left: 1.5rem;
 	border-left: 3px solid #d19f33;
 }
 blockquote p {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	line-height: 1.5rem;
-}	
+}
+@media screen and (min-width: 360px) {
+	blockquote p {
+		font-size: 1.5rem;
+		line-height: 1.5rem;
+	}	
+}
 @media screen and (min-width: 480px) {
 	blockquote {
-		padding-left: 1.5rem;
+		padding-left: 3rem;
 	}
 	blockquote p {
 		font-size: 2rem;
@@ -273,9 +331,15 @@ blockquote p {
 	opacity: 1;
 }
 #get-in-touch .colophon {
-	margin: 6rem -7rem -7rem;
-	padding: 1rem 7rem;
+	margin: 6rem -2rem -2rem;
+	padding: 1rem 2rem;
 	background: rgba(21, 26, 31, 0.05);
 	font-size: 0.875rem;
 	color: rgba(21, 26, 31, 0.5);
+}
+@media screen and (min-width: 480px) {
+	#get-in-touch .colophon {
+		margin: 6rem -7rem -7rem;
+		padding: 1rem 7rem;
+	}
 }

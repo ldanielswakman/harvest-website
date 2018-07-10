@@ -3,7 +3,7 @@
 var flock;
 
 function setup() {
-  var canvas = createCanvas(640,360);
+  var canvas = createCanvas(windowWidth,windowHeight);
   // createP("Drag the mouse to generate new boids.");
 
   canvas.parent('intro');
@@ -13,7 +13,9 @@ function setup() {
   n_initial = 100;
   // n_initial = 1;
   for (var i = 0; i < n_initial; i++) {
-    var b = new Boid(width/2,height/2);
+    var left = random(0.6,0.8) * width;
+    var top = random(0.25,0.8) * height;
+    var b = new Boid(left,top);
     flock.addBoid(b);
   }
 }
@@ -26,6 +28,10 @@ function draw() {
 // Add a new boid into the System
 function mouseDragged() {
   flock.addBoid(new Boid(mouseX,mouseY));
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 // The Nature of Code
@@ -61,8 +67,8 @@ function Boid(x,y) {
   this.acceleration = createVector(0,0);
   this.velocity = createVector(random(-0.5,0.5),random(-0.5,0.5));
   this.position = createVector(x,y);
-  this.r = 3.0;
-  this.maxspeed = 1.5;    // Maximum speed
+  this.r = 6.0;
+  this.maxspeed = 2;    // Maximum speed
   this.maxforce = 0.05; // Maximum steering force
 }
 
@@ -122,7 +128,7 @@ Boid.prototype.render = function() {
   var theta = this.velocity.heading() + radians(90);
   fill(0, 0, 0);
   stroke(0, 0, 0);
-  strokeWeight(2);
+  strokeWeight(4);
   push();
   translate(this.position.x,this.position.y);
   rotate(theta);
@@ -146,7 +152,7 @@ Boid.prototype.borders = function() {
 // Separation
 // Method checks for nearby boids and steers away
 Boid.prototype.separate = function(boids) {
-  var desiredseparation = 25.0;
+  var desiredseparation = 35.0;
   var steer = createVector(0,0);
   var count = 0;
   // For every boid in the system, check if it's too close
