@@ -10,7 +10,7 @@ github_username:  ldanielswakman
 
 # Structure settings
 collections:
-  sections:
+  - sections:
     title: Sections
     output: false
   - path: _posts
