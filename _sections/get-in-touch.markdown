@@ -2,8 +2,7 @@
 title: Get in touch
 order: 5
 date: 2018-07-16 12:00:00 +0000
-highlight: |-
-  We’d love to hear your story
+highlight: We’d love to hear your story
 email: contact@harvest-mobile.com
 address: |-
   Harvest Media LLC<br>
@@ -11,8 +10,9 @@ address: |-
   Wilmington, DE 19806<br>
   United States
 linkedin_url: https://www.linkedin.com/company/harvest-mobile/
----
+published: false
 
+---
 <div class="row">
   <div class="col-xs-12 col-sm-7">
     <blockquote><p>{{ page.highlight }}</p></blockquote>
