@@ -3,7 +3,7 @@
 	{% assign sections = site.sections | sort: 'order' %}
 	{% for section in sections %}
 		{% if section.slug != 'intro' %}
-			{% unless section.hidden %}
+			{% unless section.published == false %}
 				<li><a href="#{{ section.slug }}">{{ section.title | upcase }}</a></li>
 			{% endunless %}
 		{% endif %}

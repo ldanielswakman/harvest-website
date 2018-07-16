@@ -2,7 +2,6 @@
 title: Partners
 order: 4
 date: 2018-07-16 12:00:00 +0000
-hidden: 1
 highlight: '<span style="color: lightgrey;">We know the industry, inside out</span>'
 text: '<span style="color: lightgrey;">Pilot and photographer Tim Whittaker captured
   this majestic yet soothing aerial footage of working sheepdogs doing what they do
