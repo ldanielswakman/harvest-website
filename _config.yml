@@ -13,6 +13,8 @@ collections:
   sections:
     title: Sections
     output: false
+  posts:
+    hidden: true
 
 # Build settings
 markdown: kramdown
