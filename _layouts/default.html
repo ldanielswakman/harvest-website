@@ -11,7 +11,7 @@
     {% assign i = 0 %}
 
     {% for section in sections %}
-      {% unless section.hidden %}
+      {% unless section.published == false %}
 
         <section id="{{ section.slug }}">
 
