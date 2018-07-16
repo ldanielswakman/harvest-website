@@ -1,3 +1,3 @@
 ---
-layout: placeholder
+layout: default
 ---

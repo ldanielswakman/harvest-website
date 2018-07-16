@@ -8,7 +8,7 @@ subtext: By professionals for professionals
 
 <h1>
   <span class="text" style="position: absolute; left: -9999px; opacity: 0;">{{ site.title }}</span>
-  <img src="images/logo.svg" alt="" style="height: 2rem;" />
+  <img src="{{ site.url }}/images/logo.svg" alt="" style="height: 2rem;" />
 </h1>
 
 <br><br><br>
