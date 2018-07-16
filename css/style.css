@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Maison Neue';
-  src: url('../fonts/Maison-Neue-Book.woff2') format('woff2'),
-       url('../fonts/Maison-Neue-Book.woff') format('woff');
+  src: url('../fonts/MaisonNeue-Book.woff2') format('woff2'),
+       url('../fonts/MaisonNeue-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Maison Neue';
-  src: url('../fonts/Maison-Neue-Medium.woff2') format('woff2'),
-       url('../fonts/Maison-Neue-Medium.woff') format('woff');
+  src: url('../fonts/MaisonNeue-Demi.woff2') format('woff2'),
+       url('../fonts/MaisonNeue-Demi.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'Maison Neue';
-  src: url('../fonts/Maison-Neue-Bold.woff2') format('woff2'),
-       url('../fonts/Maison-Neue-Bold.woff') format('woff');
+  src: url('../fonts/MaisonNeue-Bold.woff2') format('woff2'),
+       url('../fonts/MaisonNeue-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
