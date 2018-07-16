@@ -13,6 +13,9 @@ collections:
   sections:
     title: Sections
     output: false
+  path: _posts
+    hidden: true
+    create: none
 
 # Build settings
 markdown: kramdown
