@@ -11,11 +11,15 @@
     {% for section in sections %}
       <section id="{{ section.slug }}">
 
+        {% if section.slug != 'intro' %}
+          <h3><span class="number">0{{ forloop.index0 }}</span> {{ section.title | upcase }}</h3>
+        {% endif %}
+
         {{ section.content }}
         
       </section>
     {% endfor %}
-    
+
   </body>
 
 </html>
