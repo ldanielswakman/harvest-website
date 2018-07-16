@@ -13,7 +13,7 @@ collections:
   sections:
     title: Sections
     output: false
-  path: _posts
+  - path: _posts
     hidden: true
     create: none
 
