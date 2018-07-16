@@ -8,9 +8,16 @@ url: "http://harvest-mobile.com" # the base hostname & protocol for your site, e
 twitter_username: ldanielswakman
 github_username:  ldanielswakman
 
+# Structure settings
+collections:
+  sections:
+    title: Sections
+    output: false
+
 # Build settings
 markdown: kramdown
 
 # Custom settings
 theme_color: "#151A1F"
 keywords: harvest, mobile, intelligent, performance-based, marketing
+google_analytics: UA-9833982-35

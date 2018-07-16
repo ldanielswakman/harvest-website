@@ -1,8 +1,9 @@
-<nav>
-	<ul>
-		{% assign sections = site.sections | sort: 'order' %}
-		{% for section in sections %}
-			<li><a {% if section.slug == 'big-picture' %} class="contact" {% endif %} href="#{{ section.slug }}"></a></li>
-		{% endfor %}
-	</ul>
-</nav>
+<ol class="menu">
+  <a class="intro-anchor isActive" href="#intro">&uarr;</a>
+	{% assign sections = site.sections | sort: 'order' %}
+	{% for section in sections %}
+		{% if section.slug != 'intro' %}
+			<li><a href="#{{ section.slug }}">{{ section.title | upcase }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ol>
