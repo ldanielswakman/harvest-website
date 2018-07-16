@@ -10,7 +10,6 @@ address: |-
   Wilmington, DE 19806<br>
   United States
 linkedin_url: https://www.linkedin.com/company/harvest-mobile/
-published: false
 
 ---
 <div class="row">
