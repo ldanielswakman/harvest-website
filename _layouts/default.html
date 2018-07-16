@@ -8,16 +8,23 @@
     {% include nav.html %}
 
     {% assign sections = site.sections | sort: 'order' %}
+    {% assign i = 0 %}
+
     {% for section in sections %}
-      <section id="{{ section.slug }}">
+      {% unless section.hidden %}
 
-        {% if section.slug != 'intro' %}
-          <h3><span class="number">0{{ forloop.index0 }}</span> {{ section.title | upcase }}</h3>
-        {% endif %}
+        <section id="{{ section.slug }}">
 
-        {{ section.content }}
-        
-      </section>
+          {% if section.slug != 'intro' %}
+            <h3><span class="number">0{{ i }}</span> {{ section.title | upcase }}</h3>
+          {% endif %}
+
+          {{ section.content }}
+          
+          {% assign i = i | plus: 1 %}
+          
+        </section>
+      {% endunless %}
     {% endfor %}
 
   </body>

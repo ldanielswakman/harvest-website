@@ -2,6 +2,7 @@
 title: Partners
 order: 4
 date: 2018-07-16 12:00:00 +0000
+hidden: 1
 highlight: |-
   <span style="color: lightgrey;">We know the industry, inside out</span>
 text: |-
