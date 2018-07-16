@@ -7,9 +7,11 @@ collections:
 - path: ''
   label: Pages
   create: all
+  hidden: true
 - path: _posts
   label: Posts
   create: all
+  hidden: true
 - path: _sections
   label: Sections
   create: all
