@@ -10,13 +10,12 @@ github_username:  ldanielswakman
 
 # Structure settings
 collections:
-- path: _posts
-  hidden: true
-- path: _pages
-  hidden: true
-- path: _sections
-  label: Sections
-  output: false
+  sections:
+    title: Sections
+    output: false
+  posts:
+    path: _posts
+    hidden: true
 
 # Build settings
 markdown: kramdown

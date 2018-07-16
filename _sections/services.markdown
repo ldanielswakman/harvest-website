@@ -5,17 +5,20 @@ date: 2018-07-16 12:00:00 +0000
 highlight: |-
   Highest quality of <span style="white-space: nowrap;">fraud-free</span> user acquisition made simple
 text: |-
-  <p style="color: lightgrey;">Mesmerizing Video of Dogs Herding Thousands of Sheep Is the Most Soothing Eye Candy Ever Made Looking for something truly mind-boggling? This incredible video is just the thing, and has the added bonus of showing us just why herding dogs are so good at their jobs. Pilot and photographer Tim Whittaker captured this majestic yet soothing aerial footage of working sheepdogs doing what they do best in Rangitikei, New Zealand.</p>
+  We have created Harvest to meet your expectations and provide you the highest quality service when it comes to mobile user acquisition. 
+
+  We are here to make a difference and change the face of our industry - we do not compromise when it comes to quality.
 services:
-- title: Media buying
+- title: Media Buying and Direct Traffic
   text: |-
-    <p style="color: lightgrey;">This incredible video is just the thing, and has the added bonus of showing us just why herding dogs are so good at their jobs.</p>
-- title: Direct Traffic
+    Highest quality and transparent traffic from reliable sources + Directly integrated in-app sources
+- title: Anti-Fraud Filters
   text: |-
-    <p style="color: lightgrey;">Pilot and photographer Tim Whittaker captured this majestic yet soothing aerial footage of working sheepdogs doing what they do best in Rangitikei, New Zealand.</p>
+    We detect and fight fraud before it ever reaches our clients
 - title: Premium Services
   text: |-
-    <p style="color: lightgrey;">Impression tracking, video ads, native ads, full transparency - you name it, we do it for you.</p>
+    Impression tracking, video ads, native ads, full transparency - you name it, we do it for you
+
 
 ---
 
@@ -34,7 +37,7 @@ services:
 <div class="col-xs-12 col-sm-4">
   <div class="item">
     <h4>{{ service.title }}</h4>
-    {{ service.text }}
+    {{ service.text | markdownify }}
   </div>
 </div>
 {% endfor %}

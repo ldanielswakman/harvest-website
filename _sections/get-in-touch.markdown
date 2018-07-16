@@ -4,13 +4,13 @@ order: 5
 date: 2018-07-16 12:00:00 +0000
 highlight: |-
   We’d love to hear your story
-email: info@harvest-mobile.com
+email: contact@harvest-mobile.com
 address: |-
   Harvest Media LLC<br>
   19C Trolley Square<br>
   Wilmington, DE 19806<br>
   United States
-linkedin_url: https://www.linkedin.com/in/
+linkedin_url: https://www.linkedin.com/company/harvest-mobile/
 ---
 
 <div class="row">
