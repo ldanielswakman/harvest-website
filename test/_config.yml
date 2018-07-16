@@ -1,0 +1,26 @@
+# Site settings
+title: Harvest
+email: hello@ldaniel.eu
+description: >- # this means to ignore newlines until "baseurl:"
+  Intelligent performance-based marketing — By professionals for professionals.
+baseurl: "/test" # the subpath of your site, e.g. /blog
+url: "http://harvest-mobile.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ldanielswakman
+github_username:  ldanielswakman
+
+# Structure settings
+collections:
+  sections:
+    title: Sections
+    output: false
+  posts:
+    path: _posts
+    hidden: true
+
+# Build settings
+markdown: kramdown
+
+# Custom settings
+theme_color: "#151A1F"
+keywords: harvest, mobile, intelligent, performance-based, marketing
+google_analytics: UA-9833982-35

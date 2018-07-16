@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+	{% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    {% assign sections = site.sections | sort: 'order' %}
+    {% assign i = 0 %}
+
+    {% for section in sections %}
+      {% unless section.hidden %}
+
+        <section id="{{ section.slug }}">
+
+          {% if section.slug != 'intro' %}
+            <h3><span class="number">0{{ i }}</span> {{ section.title | upcase }}</h3>
+          {% endif %}
+
+          {{ section.content }}
+          
+          {% assign i = i | plus: 1 %}
+          
+        </section>
+      {% endunless %}
+    {% endfor %}
+
+  </body>
+
+</html>
