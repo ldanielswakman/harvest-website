@@ -24,6 +24,19 @@ fields:
   label: Text
   config:
     wysiwyg: true
+- type: field_group_list
+  label: Industries
+  name: industries
+  config:
+    max: '6'
+    labelField: title
+  fields:
+  - type: text
+    label: Title
+    name: title
+  - type: text
+    label: Text
+    name: text
 - type: datetime
   config:
     display_utc: true

@@ -24,14 +24,6 @@ fields:
   label: Text
   config:
     wysiwyg: true
-- type: datetime
-  config:
-    display_utc: true
-    date_format: YYYY-MM-DD
-    time_format: hh:mm:ss
-  label: date
-  name: date
-  hidden: true
 - type: field_group_list
   label: Services
   name: services
@@ -45,5 +37,13 @@ fields:
   - type: text
     label: Text
     name: text
+- type: datetime
+  config:
+    display_utc: true
+    date_format: YYYY-MM-DD
+    time_format: hh:mm:ss
+  label: date
+  name: date
+  hidden: true
 pages:
 - _sections/services.markdown
