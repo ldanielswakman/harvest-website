@@ -32,5 +32,18 @@ fields:
   label: date
   name: date
   hidden: true
+- type: field_group_list
+  label: Services
+  name: services
+  config:
+    max: '6'
+    labelField: title
+  fields:
+  - type: text
+    label: Title
+    name: title
+  - type: text
+    label: Text
+    name: text
 pages:
 - _sections/services.markdown
