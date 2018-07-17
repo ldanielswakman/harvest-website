@@ -16,3 +16,11 @@ fields:
     min: '0'
     step: '1'
     required: true
+- type: datetime
+  config:
+    display_utc: true
+    date_format: YYYY-MM-DD
+    time_format: hh:mm:ss
+  label: date
+  name: date
+  hidden: true
