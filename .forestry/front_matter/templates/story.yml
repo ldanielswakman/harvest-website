@@ -1,0 +1,34 @@
+---
+label: Story
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: number
+  name: order
+  label: Order
+  description: Position of section on the page
+  config:
+    min: '0'
+    step: '1'
+    required: true
+- type: text
+  name: highlight
+  label: Highlight
+- type: text
+  name: text
+  label: Text
+- type: datetime
+  config:
+    display_utc: true
+    date_format: YYYY-MM-DD
+    time_format: hh:mm:ss
+  label: date
+  name: date
+  hidden: true
+pages:
+- _sections/story.markdown
