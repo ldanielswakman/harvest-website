@@ -27,3 +27,6 @@ fields:
   label: date
   name: date
   hidden: true
+- type: text
+  label: Subtext
+  name: subtext
