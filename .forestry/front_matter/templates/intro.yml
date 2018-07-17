@@ -9,8 +9,8 @@ fields:
   config:
     required: true
 - type: number
-  name: weight
-  label: Weight
+  name: order
+  label: Order
   description: Position of section on the page
   config:
     min: '0'
