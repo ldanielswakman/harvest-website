@@ -30,3 +30,5 @@ fields:
 - type: text
   label: Subtext
   name: subtext
+pages:
+- _sections/intro.markdown
