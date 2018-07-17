@@ -1,0 +1,47 @@
+---
+label: Updates
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  config:
+    required: true
+- type: number
+  name: order
+  label: Order
+  description: Position of section on the page
+  config:
+    min: '0'
+    step: '1'
+    required: true
+- type: field_group_list
+  label: Updates
+  name: updates
+  config:
+    labelField: title
+  fields:
+  - type: text
+    label: Title
+    name: title
+  - type: text
+    label: Text
+    name: text
+  - type: datetime
+    config:
+      display_utc: true
+      date_format: YYYY-MM-DD
+      time_format: hh:mm:ss
+    label: date
+    name: date
+- type: datetime
+  config:
+    display_utc: true
+    date_format: YYYY-MM-DD
+    time_format: hh:mm:ss
+  label: date
+  name: date
+  hidden: true
+pages:
+- _sections/updates.markdown

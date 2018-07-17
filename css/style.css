@@ -459,6 +459,20 @@ blockquote p {
 
 
 
+/* Section-specific: #latest */
+#updates {
+	background: #D7B15B;
+}
+#updates h3 {
+	display: none;
+}
+#updates h4 {
+	font-size: 2rem;
+}
+
+
+
+
 /* Section-specific: #services */
 section#services:before {
 	content: "";

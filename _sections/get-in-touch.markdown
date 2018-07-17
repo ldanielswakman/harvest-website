@@ -1,6 +1,6 @@
 ---
 title: Get in touch
-order: 5
+order: 6
 date: 2018-07-16 12:00:00 +0000
 highlight: We’d love to hear your story
 email: contact@harvest-mobile.com

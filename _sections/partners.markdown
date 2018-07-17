@@ -1,6 +1,6 @@
 ---
 title: Partners
-order: 4
+order: 5
 date: 2018-07-16 12:00:00 +0000
 highlight: We know the industry, inside out
 text: '<span style="color: lightgrey;">Pilot and photographer Tim Whittaker captured
