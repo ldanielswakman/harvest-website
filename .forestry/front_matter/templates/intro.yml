@@ -16,6 +16,9 @@ fields:
     min: '0'
     step: '1'
     required: true
+- type: text
+  name: tagline
+  label: Tagline
 - type: datetime
   config:
     display_utc: true
