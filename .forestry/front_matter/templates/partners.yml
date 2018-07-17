@@ -19,9 +19,11 @@ fields:
 - type: text
   name: highlight
   label: Highlight
-- type: text
+- type: textarea
   name: text
   label: Text
+  config:
+    wysiwyg: true
 - type: datetime
   config:
     display_utc: true
