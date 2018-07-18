@@ -27,7 +27,7 @@ services:
   </div>
 </div>
 
-<div class="row u-menu-paddding" style="margin-top: 3rem;">
+<div class="row u-menu-paddding" style="margin-top: 6rem;">
 
 {% for service in page.services %}
 <div class="col-xs-12 col-sm-4">

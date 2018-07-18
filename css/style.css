@@ -169,12 +169,12 @@ strong {
 @media screen and (min-width: 480px) {
 	.menu {
 		position: fixed;
-		right: 5rem;
+		right: 2rem;
 		bottom: 5rem;
 	}
 }
 .menu .intro-anchor {
-	margin-left: 2.3rem;
+	margin-left: 2.8rem;
 	opacity: 1;
 	transition: all 0.3s ease-in-out;
 	pointer-events: all;
@@ -316,7 +316,10 @@ section {
 	padding: 4rem 2rem 2rem;
 }
 @media screen and (min-width: 480px) {
-	section { padding: 7rem; }
+	section {
+		padding: 7rem;
+		padding: 7rem 20rem 7rem 7rem;
+	}
 }
 section p {
 	max-width: 40rem;
@@ -375,7 +378,7 @@ blockquote p {
 .item:before {
 	content: "";
 	display: block;
-	width: 30%;
+	width: 3.5rem;
 	height: 3px;
 	margin-bottom: 1.5rem;
 	border-top: 3px solid #d19f33;
@@ -459,6 +462,7 @@ blockquote p {
 
 
 
+
 /* Section-specific: #latest */
 #updates {
 	background: #D7B15B;
@@ -469,6 +473,74 @@ blockquote p {
 #updates h4 {
 	font-size: 2rem;
 }
+#updates .owl-loaded {
+	display: flex;
+	flex-direction: column;
+}
+#updates .owl-stage-outer {
+	order: 2;
+}
+#updates .owl-nav {
+	order: 1;
+}
+#updates .owl-prev,
+#updates .owl-next {
+	position: absolute;
+	top: 50%;
+	left: -3.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 0;
+}
+#updates .owl-prev:before,
+#updates .owl-next:before {
+	content: "";
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	margin-left: 1rem;
+	border-top: 2px solid #fff;
+	border-left: 2px solid #fff;
+	transform: rotate(-45deg);
+}
+#updates .owl-next:before {
+	margin-left: 0.5rem;
+	transform: rotate(135deg);
+}
+#updates .owl-next {
+	left: auto;
+	right: -3.5rem;
+}
+#updates .owl-prev.disabled:before,
+#updates .owl-next.disabled:before {
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+	border-left: 2px solid rgba(0, 0, 0, 0.1);
+	cursor: default;
+	cursor: not-allowed;
+}
+#updates .owl-dots {
+	order: 1;
+	margin-bottom: 2rem;
+}
+#updates .owl-dots .owl-dot {
+	display: inline-block;
+	width: 3.5rem;
+	height: 3px;
+	margin-right: 1rem;
+	border-top: 3px solid rgba(0, 0, 0, 0.1);
+}
+#updates .owl-dots .owl-dot:not(.active):hover {
+	border-top-color: rgba(0, 0, 0, 0.2);
+}
+#updates .owl-dots .owl-dot.active {
+	border-top-color: #fff;
+}
+#updates .owl-dots .owl-dot:focus,
+#updates .owl-prev:focus,
+#updates .owl-next:focus {
+	outline: none;
+}
+
 
 
 
@@ -477,11 +549,11 @@ blockquote p {
 section#services:before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 0;
 	background: #fff;
-	width: 48%;
-	height: 90%;
+	width: 80%;
+	height: 40%;
 }
 
 
@@ -496,8 +568,8 @@ section#story:before {
 	top: 11rem;
 	right: 0;
 	background: #fff;
-	width: 52%;
-	height: 60%;
+	width: 60%;
+	height: 66%;
 }
 
 
@@ -542,8 +614,8 @@ section#partners:before {
 }
 @media screen and (min-width: 480px) {
 	#get-in-touch .colophon {
-		margin: 6rem -7rem -7rem;
-		padding: 1rem 7rem;
+		margin: 6rem -20rem -7rem -7rem;
+		padding: 1rem 20rem 1rem 7rem;
 	}
 }
 

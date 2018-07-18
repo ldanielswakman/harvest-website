@@ -20,8 +20,10 @@
           {% endif %}
 
           {{ section.content }}
-          
-          {% assign i = i | plus: 1 %}
+
+          {% if section.slug != 'updates' %}
+            {% assign i = i | plus: 1 %}
+          {% endif %}
           
         </section>
       {% endunless %}

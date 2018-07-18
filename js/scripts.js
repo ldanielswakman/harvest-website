@@ -25,6 +25,22 @@ function updateHash(href) {
 
 
 
+
+
+// Component: Owl Carousel
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+      margin: 10,
+      nav: true,
+      items: 1,
+  });
+});
+
+
+
+
+
+
 // Component: activeSections
 scrollevents = 'ready scroll resize scrollstart scrollstop';
 $(document).on(scrollevents, function() {

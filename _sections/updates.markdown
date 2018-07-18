@@ -11,6 +11,11 @@ updates:
 published: false
 
 ---
+
+{% if page.updates != '' %}
+
+<div class="owl-carousel">
+
 {% for update in page.updates %}
 
 <div class="row u-menu-paddding update-item">
@@ -24,3 +29,7 @@ published: false
 </div>
 
 {% endfor %}
+
+</div>
+
+{% endif %}

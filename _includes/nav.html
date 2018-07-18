@@ -2,7 +2,7 @@
   <a class="intro-anchor isActive" href="#intro">&uarr;</a>
 	{% assign sections = site.sections | sort: 'order' %}
 	{% for section in sections %}
-		{% if section.slug != 'intro' %}
+		{% if section.slug != 'intro' and section.slug != 'updates' %}
 			{% unless section.published == false %}
 				<li><a href="#{{ section.slug }}">{{ section.title | upcase }}</a></li>
 			{% endunless %}
