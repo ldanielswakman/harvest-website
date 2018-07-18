@@ -11,7 +11,6 @@ updates:
 published: false
 
 ---
-
 {% if page.updates != '' %}
 
 <div class="owl-carousel">
