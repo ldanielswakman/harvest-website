@@ -63,7 +63,7 @@ body {
 
 /* Utilities */
 .u-menu-padding {}
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	.u-menu-padding {
 		padding-right: 12rem !important;
 	}
@@ -91,7 +91,7 @@ h2 {
 	line-height: 2rem;
 	font-weight: 500;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	h2 { font-size: 5rem; line-height: 5rem; }
 }
 h3 {
@@ -106,7 +106,7 @@ h3 {
 		font-size: 2.5rem;
 	}
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	h3 {
 		margin-top: -3rem;
 		margin-bottom: 3rem;
@@ -118,7 +118,7 @@ h3 .number {
 	left: -1.25rem;
 	font-weight: normal;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	h3 .number {
 		left: -2rem;
 	}
@@ -166,7 +166,7 @@ strong {
 	/*color: #fff;
 	opacity: 0.5;*/
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	.menu {
 		position: fixed;
 		right: 2rem;
@@ -315,7 +315,7 @@ section {
 	position: relative;
 	padding: 4rem 2rem 2rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	section {
 		padding: 7rem;
 		padding: 7rem 20rem 7rem 7rem;
@@ -357,7 +357,7 @@ blockquote p {
 		line-height: 1.5rem;
 	}	
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	blockquote {
 		padding-left: 3rem;
 	}
@@ -420,7 +420,7 @@ blockquote p {
 	border: none;
 	text-decoration: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	#intro .intro-link {
 		left: 50%;
 		margin-left: -1.25rem;
@@ -549,11 +549,18 @@ blockquote p {
 section#services:before {
 	content: "";
 	position: absolute;
-	top: 50%;
+	top: 37%;
 	left: 0;
 	background: #fff;
-	width: 80%;
-	height: 40%;
+	width: 90%;
+	height: 60%;
+}
+@media screen and (min-width: 768px) {
+	section#services:before {
+		top: 50%;
+		width: 80%;
+		height: 40%;
+	}
 }
 
 
@@ -565,11 +572,18 @@ section#story {
 section#story:before {
 	content: "";
 	position: absolute;
-	top: 11rem;
+	top: 13rem;
 	right: 0;
 	background: #fff;
-	width: 60%;
-	height: 66%;
+	width: 80%;
+	height: 60%;
+}
+@media screen and (min-width: 768px) {
+	section#story:before {
+		top: 11rem;
+		width: 60%;
+		height: 66%;
+	}
 }
 
 
@@ -612,7 +626,7 @@ section#partners:before {
 	font-size: 0.875rem;
 	color: rgba(21, 26, 31, 0.5);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
 	#get-in-touch .colophon {
 		margin: 6rem -20rem -7rem -7rem;
 		padding: 1rem 20rem 1rem 7rem;
