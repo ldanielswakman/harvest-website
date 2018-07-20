@@ -15,7 +15,7 @@ published: false
 
 <div class="owl-carousel">
 
-{% for update in page.updates %}
+{% for update in page.updates limit:3 %}
 
 <div class="row u-menu-paddding update-item">
   <div class="col-xs-12 col-sm-6">
