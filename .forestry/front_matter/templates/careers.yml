@@ -34,9 +34,11 @@ fields:
   - type: text
     label: Title
     name: title
-  - type: text
-    label: Text
+  - type: textarea
     name: text
+    label: Text
+    config:
+      wysiwyg: true
 - type: datetime
   config:
     display_utc: true
