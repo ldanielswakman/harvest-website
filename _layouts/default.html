@@ -11,8 +11,8 @@
     {% assign i = 0 %}
 
     {% for section in sections %}
-      {% unless section.published == false %}
 
+      {% unless section.published == false %}
         <section id="{{ section.slug }}">
 
           {% if section.slug != 'intro' %}
@@ -27,6 +27,7 @@
           
         </section>
       {% endunless %}
+      
     {% endfor %}
 
   </body>
