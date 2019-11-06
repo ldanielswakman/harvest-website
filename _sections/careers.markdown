@@ -9,6 +9,7 @@ positions:
   text: We currently focus our media buying efforts on providing user acqusition to mobile apps. However, we are expanding into new verticals within the mobile performance marketing industry and we're looking for additional, creative team members to create that future together.
 - title: Mobile Media Buyer (remote)
   text: Harvest members work remotely from various locations in USA & UK/Germany based on flexible conditions and strong teamwork. If you're looking to grow a new startup while working from any location in the world on your own terms, this will be a great fit for you.
+published: false
 
 ---
 <div class="row">
