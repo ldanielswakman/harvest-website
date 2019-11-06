@@ -73,3 +73,18 @@ function navOnScroll($target, $nav) {
     $nav.find('a[href="#' + active_id + '"]').closest('li').addClass('isActive');
   }
 }
+
+
+
+
+
+// Component: Career position interactions// Component: smoothScroll
+$(document).ready(function() {
+  $('#careers .position').click(function() {
+    $isExpanded = $(this).hasClass('isExpanded') ? true : false;
+    $('#careers .position').removeClass('isExpanded');
+    if(!$isExpanded) {
+      $(this).addClass('isExpanded');
+    }
+  });
+});

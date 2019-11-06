@@ -21,15 +21,12 @@ published: false
   </div>
 </div>
 
-<div class="row u-menu-paddding" style="margin-top: 6rem;">
+{% for position in page.positions %}
+  {% if position.is_visible != false %}
+<article id="" class="position u-menu-paddding">
+  <div class="title"><h4>{{ position.title }}</h4></div>
+  <div class="content">{{ position.text | markdownify }}</div>
+</article>
 
-{% for service in page.positions %}
-<div class="col-xs-12 col-sm-4">
-  <div class="item">
-    <h4>{{ service.title }}</h4>
-    {{ service.text | markdownify }}
-  </div>
-</div>
+  {% endif %}
 {% endfor %}
-
-</div>

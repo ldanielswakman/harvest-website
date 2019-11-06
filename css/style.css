@@ -602,6 +602,53 @@ section#partners:before {
 
 
 
+/* Section-specific: #careers */
+#careers .position {
+	position: relative;
+	margin: 0 -2rem;
+	margin-top: 2rem;
+	padding: 2rem;
+	background: white;
+	cursor: pointer;
+}
+#careers .position + .position {
+	margin-top: 0;
+	border-top: 2px solid #f5f6f7;
+}
+#careers .position:not(.isExpanded):hover {
+	background: #FBFBFC;
+}
+#careers .position:after {
+	content: "";
+	position: absolute;
+	right: 2rem;
+	top: 2rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-right: 2px solid #d19f33;
+	border-bottom: 2px solid #d19f33;
+	transform: rotate(45deg);
+	transition: all 0.3s ease-in-out;
+}
+#careers .position.isExpanded:after {
+	transform: rotate(225deg);
+}
+#careers .position .title { padding-right: 2rem; }
+#careers .position .content {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+}
+#careers .position.isExpanded .content {
+	max-height: 200vh;
+	opacity: 1;
+	padding-top: 1rem;
+}
+
+
+
+
 /* Section-specific: #get-in-touch */
 #get-in-touch {
 	background: #D7B15B;
