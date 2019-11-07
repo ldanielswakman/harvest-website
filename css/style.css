@@ -634,6 +634,10 @@ section#partners:before {
 	transform: rotate(225deg);
 }
 #careers .position .title { padding-right: 2rem; }
+@media screen and (max-width: 768px) {
+	#careers .position h4 { font-size: 1.25rem; }
+	#careers .position p { font-size: 1rem; }
+}
 #careers .position .content {
 	max-height: 0;
 	overflow: hidden;

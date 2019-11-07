@@ -19,7 +19,6 @@ positions:
     while working from any location in the world on your own terms, this will be a
     great fit for you.
   is_visible: true
-published: false
 
 ---
 <div class="row">
@@ -33,7 +32,7 @@ published: false
 
 {% for position in page.positions %}
   {% if position.is_visible != false %}
-<article id="" class="position u-menu-paddding">
+<article id="{{ position.title | slugify }}" class="position u-menu-paddding">
   <div class="title"><h4>{{ position.title }}</h4></div>
   <div class="content">{{ position.text | markdownify }}</div>
 </article>

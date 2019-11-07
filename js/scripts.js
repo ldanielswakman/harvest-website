@@ -8,6 +8,11 @@ $(document).ready(function() {
     }
   });
 });
+
+
+
+
+
 // Update URL hash
 function updateHash(href) {
   // Restore original URL + search query if href is ''
@@ -78,13 +83,23 @@ function navOnScroll($target, $nav) {
 
 
 
-// Component: Career position interactions// Component: smoothScroll
+// Component: Career position interactions
 $(document).ready(function() {
+
+  // Onload: check if hash has position
+  if (window.location.hash.length > 0 && $('.position' + window.location.hash).length > 0) {
+    $('#careers .position').removeClass('isExpanded');
+    $('.position' + window.location.hash).addClass('isExpanded');
+  }
+
+  // Click interaction
   $('#careers .position').click(function() {
     $isExpanded = $(this).hasClass('isExpanded') ? true : false;
     $('#careers .position').removeClass('isExpanded');
     if(!$isExpanded) {
       $(this).addClass('isExpanded');
+      updateHash('#' + $(this).attr('id'));
     }
   });
+
 });
