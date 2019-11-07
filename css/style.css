@@ -634,9 +634,8 @@ section#partners:before {
 	transform: rotate(225deg);
 }
 #careers .position .title { padding-right: 2rem; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 360px) {
 	#careers .position h4 { font-size: 1.25rem; }
-	#careers .position p { font-size: 1rem; }
 }
 #careers .position .content {
 	max-height: 0;
@@ -645,9 +644,29 @@ section#partners:before {
 	transition: all 0.6s ease-in-out;
 }
 #careers .position.isExpanded .content {
-	max-height: 200vh;
+	max-height: 400vh;
 	opacity: 1;
 	padding-top: 1rem;
+}
+@media screen and (min-width: 480px) {
+	#careers .position.isExpanded .content {
+		max-height: 200vh;
+	}
+}
+#careers .position .content p, ul, ol  {
+	max-width: 40rem;
+	margin-bottom: 1rem;
+	letter-spacing: 0.03rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	opacity: 0.8;
+}
+@media screen and (min-width: 360px) {
+	#careers .position .content p, ul, ol { font-size: 1.125rem; line-height: 1.75rem; }
+}
+#careers .position .content ul, ol {
+	padding-left: 1.5rem;
+	list-style: disc;
 }
 
 
