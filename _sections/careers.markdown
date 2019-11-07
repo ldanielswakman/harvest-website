@@ -1,15 +1,24 @@
 ---
 title: Careers
 order: 6
-date: 2019-11-06 12:00:00 +0000
+date: 2019-11-06T12:00:00.000+00:00
 highlight: Be part of our mission
-text: "We’re looking for passionate people to join us. We value flat hierarchies, clear communication, and full ownership and responsibility. This text is directly stolen from Pitch.com."
+text: We’re looking for passionate people to join us. We value flat hierarchies, clear
+  communication, and full ownership and responsibility. This text is directly stolen
+  from Pitch.com.
 positions:
 - title: Business Development Manager (remote)
-  text: We currently focus our media buying efforts on providing user acqusition to mobile apps. However, we are expanding into new verticals within the mobile performance marketing industry and we're looking for additional, creative team members to create that future together.
+  text: We currently focus our media buying efforts on providing user acqusition to
+    mobile apps. However, we are expanding into new verticals within the mobile performance
+    marketing industry and we're looking for additional, creative team members to
+    create that future together.
+  is_visible: false
 - title: Mobile Media Buyer (remote)
-  text: Harvest members work remotely from various locations in USA & UK/Germany based on flexible conditions and strong teamwork. If you're looking to grow a new startup while working from any location in the world on your own terms, this will be a great fit for you.
-published: false
+  text: Harvest members work remotely from various locations in USA & UK/Germany based
+    on flexible conditions and strong teamwork. If you're looking to grow a new startup
+    while working from any location in the world on your own terms, this will be a
+    great fit for you.
+  is_visible: false
 
 ---
 <div class="row">
