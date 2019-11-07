@@ -44,6 +44,8 @@ fields:
     label: Text
     config:
       wysiwyg: true
+      schema:
+        format: markdown
 - type: datetime
   config:
     display_utc: true
