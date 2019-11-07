@@ -18,7 +18,7 @@ positions:
     on flexible conditions and strong teamwork. If you're looking to grow a new startup
     while working from any location in the world on your own terms, this will be a
     great fit for you.
-  is_visible: false
+  is_visible: true
 
 ---
 <div class="row">
