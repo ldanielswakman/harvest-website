@@ -49,7 +49,6 @@ positions:
     while working from any location in the world on your own terms, this will be a
     great fit for you.
   is_visible: true
-published: false
 
 ---
 <div class="row">
