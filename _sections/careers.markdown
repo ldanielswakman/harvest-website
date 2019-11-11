@@ -61,11 +61,23 @@ positions:
 </div>
 
 {% for position in page.positions %}
-  {% if position.is_visible != false %}
+  {% unless position.is_visible == false %}
 <article id="{{ position.title | slugify }}" class="position u-menu-paddding">
   <div class="title"><h4>{{ position.title }}</h4></div>
   <div class="content">{{ position.text | markdownify }}</div>
 </article>
 
-  {% endif %}
+  {% endunless %}
 {% endfor %}
+
+
+{% assign counter = 0 %}
+{% for position in page.positions %}
+  {% unless position.is_visible == false %}
+    {% assign counter=counter | plus:1 %}
+  {% endunless %}
+{% endfor %}
+
+{% if counter == 0 %}
+  <div class="position position--empty"><p style="opacity: 0.5;">No open positions at the moment — check back soon!</p></div>
+{% endif %}

@@ -93,12 +93,14 @@ $(document).ready(function() {
   }
 
   // Click interaction
-  $('#careers .position').click(function() {
-    $isExpanded = $(this).hasClass('isExpanded') ? true : false;
+  $('#careers .position .title').click(function() {
+    $item = $(this).closest('.position');
+    $isExpanded = $item.hasClass('isExpanded') ? true : false;
     $('#careers .position').removeClass('isExpanded');
+    updateHash('');
     if(!$isExpanded) {
-      $(this).addClass('isExpanded');
-      updateHash('#' + $(this).attr('id'));
+      $item.addClass('isExpanded');
+      updateHash('#' + $item.attr('id'));
     }
   });
 

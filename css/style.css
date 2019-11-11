@@ -609,7 +609,6 @@ section#partners:before {
 	margin-top: 2rem;
 	padding: 2rem;
 	background: white;
-	cursor: pointer;
 }
 #careers .position + .position {
 	margin-top: 0;
@@ -628,12 +627,18 @@ section#partners:before {
 	border-right: 2px solid #d19f33;
 	border-bottom: 2px solid #d19f33;
 	transform: rotate(45deg);
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-out;
 }
 #careers .position.isExpanded:after {
 	transform: rotate(225deg);
 }
-#careers .position .title { padding-right: 2rem; }
+#careers .position.position--empty:after { display: none; }
+#careers .position .title {
+	margin: -2rem;
+	padding: 2rem 4rem 2rem 2rem;
+	transition: all 0.6s ease-out;
+	cursor: pointer;
+}
 @media screen and (max-width: 360px) {
 	#careers .position h4 { font-size: 1.25rem; }
 }
@@ -641,7 +646,10 @@ section#partners:before {
 	max-height: 0;
 	overflow: hidden;
 	opacity: 0;
-	transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-out;
+}
+#careers .position.isExpanded .title {
+	padding-bottom: 3rem;
 }
 #careers .position.isExpanded .content {
 	max-height: 400vh;
