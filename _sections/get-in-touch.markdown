@@ -30,6 +30,6 @@ linkedin_url: https://www.linkedin.com/company/harvest-mobile/
 <div class="colophon">
   <div class="row">
     <div class="col-xs-12 col-sm-7">&copy; {{ "now" | date: "%Y" }} Harvest media LLC</div>
-    <div class="col-xs-12 col-sm-5">Design & Website by <a href="http://www.maffindesign.com/" target="_blank">MAFFIN Design</a> / <a href="https://ldaniel.eu" target="_blank">ldaniel.eu</a></div>
+    <div class="col-xs-12 col-sm-5">Design & Website by <a href="https://www.nartadalladaku.com/" target="_blank">Narta Dalladaku</a> / <a href="https://ldaniel.eu" target="_blank">ldaniel.eu</a></div>
   </div>
 </div>
