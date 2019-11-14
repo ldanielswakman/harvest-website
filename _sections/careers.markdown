@@ -6,6 +6,7 @@ highlight: Be part of our mission
 text: We’re looking for passionate people to join us. We value flat hierarchies, clear
   communication, and full ownership and responsibility. This text is directly stolen
   from Pitch.com.
+apply_email: contact@harvest-mobile.com
 positions:
 - title: Business Development Manager (remote)
   text: |-
@@ -49,6 +50,12 @@ positions:
     while working from any location in the world on your own terms, this will be a
     great fit for you.
   is_visible: true
+- title: Mobile Media Buyer (remote)
+  text: Harvest members work remotely from various locations in USA & UK/Germany based
+    on flexible conditions and strong teamwork. If you're looking to grow a new startup
+    while working from any location in the world on your own terms, this will be a
+    great fit for you.
+  is_visible: true
 
 ---
 <div class="row">
@@ -60,15 +67,31 @@ positions:
   </div>
 </div>
 
-{% for position in page.positions %}
-  {% unless position.is_visible == false %}
-<article id="{{ position.title | slugify }}" class="position u-menu-paddding">
-  <div class="title"><h4>{{ position.title }}</h4></div>
-  <div class="content">{{ position.text | markdownify }}</div>
-</article>
-
-  {% endunless %}
-{% endfor %}
+<div class="positions">
+  {% for position in page.positions %}
+    {% unless position.is_visible == false %}
+      <article data-target="{{ position.title | slugify }}" class="position u-menu-paddding">
+        <h4>{{ position.title }}</h4>
+      </article>
+    {% endunless %}
+  {% endfor %}
+</div>
+<div class="dialog-wrapper">
+  <button class="dialog-mask"></button>
+  {% for position in page.positions %}
+    {% unless position.is_visible == false %}
+      <div id="{{ position.title | slugify }}" class="dialog">
+        <img src="{{ site.url }}/images/logo-black.svg" alt="" class="logo" />
+        <h4>{{ position.title }}</h4>
+        <div class="content">
+          {{ position.text | markdownify }}
+          <a href="mailto:{{ page.apply_email }}?subject=Application for {{ position.title }}" class="button button--outline" target="_blank">Apply for this job</a>
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+  <button class="dialog-close"></button>
+</div>
 
 
 {% assign counter = 0 %}

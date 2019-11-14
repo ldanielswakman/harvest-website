@@ -24,6 +24,9 @@ fields:
   label: Text
   config:
     wysiwyg: true
+- type: email
+  name: apply_email
+  label: Email address for applications
 - type: field_group_list
   label: Positions
   name: positions
