@@ -833,6 +833,10 @@ body.dialogIsActive #careers .dialog-wrapper {
 
 .button--outline {
 	border: 1px solid #D19F33;
-	background: transparent;
+	background: white;
 	color: #D19F33;
+}
+.button.button--outline:hover {
+	border-bottom-width: 1px;
+	background: white;
 }

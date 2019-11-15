@@ -91,6 +91,11 @@ $(document).ready(function() {
     $('#careers .dialog').removeClass('isActive');
     $('.dialog' + window.location.hash).addClass('isActive');
     $('body').addClass('dialogIsActive');
+
+    $.smoothScroll({
+      scrollTarget: $('#careers'),
+      easing: 'easeInOutQuart'
+    });
   }
 
   // Click interaction
@@ -109,7 +114,7 @@ $(document).ready(function() {
   });
 
   // Close interaction
-  $('#careers .dialog-close, #careers .dialog-wrapper:not(.dialog)').click(function() {
+  $('#careers .dialog-close, #careers .dialog-mask').click(function() {
     $('#careers .dialog').removeClass('isActive');
     $('body').removeClass('dialogIsActive');
     updateHash('');
