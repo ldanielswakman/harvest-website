@@ -135,6 +135,7 @@ positions:
     {% endunless %}
   {% endfor %}
 </div>
+
 <div class="dialog-wrapper">
   <button class="dialog-mask"></button>
   {% for position in page.positions %}
@@ -153,15 +154,3 @@ positions:
   {% endfor %}
   <button class="dialog-close"></button>
 </div>
-
-
-{% assign counter = 0 %}
-{% for position in page.positions %}
-  {% unless position.is_visible == false %}
-    {% assign counter=counter | plus:1 %}
-  {% endunless %}
-{% endfor %}
-
-{% if counter == 0 %}
-  <div class="position position--empty"><p style="opacity: 0.5;">No open positions at the moment — check back soon!</p></div>
-{% endif %}

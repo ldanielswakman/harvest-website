@@ -626,7 +626,7 @@ section#partners:before {
 	#careers .position { flex: 0 1 calc(50% - 1rem); margin: 0.5rem; }
 }
 @media screen and (min-width: 769px) {
-	#careers .position { padding: 1.25rem; padding-right: 2rem; margin-bottom: 0.5rem; }
+	#careers .position { padding: 1.25rem 1.25rem 3rem 1.25rem; margin-bottom: 0.5rem; }
 }
 @media screen and (min-width: 1024px) {
 	#careers .position { flex: 0 1 calc(33% - 1.5rem); }
@@ -656,7 +656,7 @@ section#partners:before {
 	transform: rotate(225deg);
 }
 #careers .position.position--empty:after { display: none; }
-#careers .position h4 { font-size: 1.25rem; }
+#careers .position h4 { font-size: 1.125rem; }
 
 
 /* Dialog */
