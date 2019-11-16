@@ -87,19 +87,37 @@ function navOnScroll($target, $nav) {
 $(document).ready(function() {
 
   // Onload: check if hash has position
-  if (window.location.hash.length > 0 && $('.position' + window.location.hash).length > 0) {
-    $('#careers .position').removeClass('isExpanded');
-    $('.position' + window.location.hash).addClass('isExpanded');
+  if (window.location.hash.length > 0 && $('.dialog' + window.location.hash).length > 0) {
+    $('#careers .dialog').removeClass('isActive');
+    $('.dialog' + window.location.hash).addClass('isActive');
+    $('body').addClass('dialogIsActive');
+
+    $.smoothScroll({
+      scrollTarget: $('#careers'),
+      easing: 'easeInOutQuart'
+    });
   }
 
   // Click interaction
   $('#careers .position').click(function() {
-    $isExpanded = $(this).hasClass('isExpanded') ? true : false;
-    $('#careers .position').removeClass('isExpanded');
-    if(!$isExpanded) {
-      $(this).addClass('isExpanded');
-      updateHash('#' + $(this).attr('id'));
+    $target_id = $(this).attr('data-target');
+    $isActive = $('.dialog#' + $target_id).hasClass('isActive') ? true : false;
+    $('#careers .dialog').removeClass('isActive');
+    $('.dialog-wrapper').removeClass('isActive');
+    updateHash('');
+    if(!$isActive) {
+      $('body').addClass('dialogIsActive');
+      $('.dialog#' + $target_id).addClass('isActive');
+      $('.dialog#' + $target_id).scrollTop(0);
+      updateHash('#' + $target_id);
     }
+  });
+
+  // Close interaction
+  $('#careers .dialog-close, #careers .dialog-mask').click(function() {
+    $('#careers .dialog').removeClass('isActive');
+    $('body').removeClass('dialogIsActive');
+    updateHash('');
   });
 
 });

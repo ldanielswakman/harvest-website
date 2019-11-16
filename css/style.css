@@ -48,6 +48,9 @@ body {
 		font-size: 112.5%;
 	}
 }
+body.dialogIsActive {
+	overflow: hidden;
+}
 
 ::-moz-selection {
   background-color: #151A1F;
@@ -63,7 +66,7 @@ body {
 
 /* Utilities */
 .u-menu-padding {}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.u-menu-padding {
 		padding-right: 12rem !important;
 	}
@@ -91,7 +94,7 @@ h2 {
 	line-height: 2rem;
 	font-weight: 500;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	h2 { font-size: 5rem; line-height: 5rem; }
 }
 h3 {
@@ -106,7 +109,7 @@ h3 {
 		font-size: 2.5rem;
 	}
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	h3 {
 		margin-top: -3rem;
 		margin-bottom: 3rem;
@@ -118,7 +121,7 @@ h3 .number {
 	left: -1.25rem;
 	font-weight: normal;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	h3 .number {
 		left: -2rem;
 	}
@@ -166,7 +169,7 @@ strong {
 	/*color: #fff;
 	opacity: 0.5;*/
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	.menu {
 		position: fixed;
 		right: 2rem;
@@ -191,7 +194,7 @@ strong {
 	}
 	.intro-anchor {
 		position: fixed;
-		top: 1rem;
+		bottom: 1rem;
 		right: 1rem;
 		z-index: 6;
 		width: 3rem;
@@ -315,10 +318,9 @@ section {
 	position: relative;
 	padding: 4rem 2rem 2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	section {
-		padding: 7rem;
-		padding: 7rem 20rem 7rem 7rem;
+		padding: 7rem 18rem 7rem 7rem;
 	}
 }
 section p {
@@ -357,7 +359,7 @@ blockquote p {
 		line-height: 1.5rem;
 	}	
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	blockquote {
 		padding-left: 3rem;
 	}
@@ -420,7 +422,7 @@ blockquote p {
 	border: none;
 	text-decoration: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	#intro .intro-link {
 		left: 50%;
 		margin-left: -1.25rem;
@@ -555,7 +557,7 @@ section#services:before {
 	width: 90%;
 	height: 60%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	section#services:before {
 		top: 50%;
 		width: 80%;
@@ -578,7 +580,7 @@ section#story:before {
 	width: 80%;
 	height: 60%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	section#story:before {
 		top: 11rem;
 		width: 60%;
@@ -603,16 +605,33 @@ section#partners:before {
 
 
 /* Section-specific: #careers */
+#careers .positions {
+	display: flex;
+	margin: 2rem -2rem 2rem;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+@media screen and (min-width: 769px) {
+	#careers .positions { margin: 2rem -0.5rem 2rem; }
+}
 #careers .position {
 	position: relative;
-	margin: 0 -2rem;
-	margin-top: 2rem;
-	padding: 2rem;
+	flex: 0 1 100%;
+	padding: 1.25rem 2rem;
+	margin: 1px 0;
 	background: white;
 	cursor: pointer;
 }
+@media screen and (min-width: 480px) {
+	#careers .position { flex: 0 1 calc(50% - 1rem); margin: 0.5rem; }
+}
+@media screen and (min-width: 769px) {
+	#careers .position { padding: 1.25rem 1.25rem 3rem 1.25rem; margin-bottom: 0.5rem; }
+}
+@media screen and (min-width: 1024px) {
+	#careers .position { flex: 0 1 calc(33% - 1.5rem); }
+}
 #careers .position + .position {
-	margin-top: 0;
 	border-top: 2px solid #f5f6f7;
 }
 #careers .position:not(.isExpanded):hover {
@@ -621,39 +640,93 @@ section#partners:before {
 #careers .position:after {
 	content: "";
 	position: absolute;
-	right: 2rem;
-	top: 2rem;
+	right: 1.25rem;
+	bottom: calc(50% - 0.375rem);
 	width: 0.75rem;
 	height: 0.75rem;
 	border-right: 2px solid #d19f33;
 	border-bottom: 2px solid #d19f33;
-	transform: rotate(45deg);
-	transition: all 0.3s ease-in-out;
+	transform: rotate(-45deg);
+	transition: all 0.3s ease-out;
+}
+@media screen and (min-width: 769px) {
+	#careers .position:after { bottom: 1.25rem; }
 }
 #careers .position.isExpanded:after {
 	transform: rotate(225deg);
 }
-#careers .position .title { padding-right: 2rem; }
-@media screen and (max-width: 360px) {
-	#careers .position h4 { font-size: 1.25rem; }
-}
-#careers .position .content {
-	max-height: 0;
-	overflow: hidden;
+#careers .position.position--empty:after { display: none; }
+#careers .position h4 { font-size: 1.125rem; }
+
+
+/* Dialog */
+#careers .dialog-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	padding: 4rem 0 0;
 	opacity: 0;
-	transition: all 0.6s ease-in-out;
+	transition: all 0.3s ease-in-out; 
+	pointer-events: none;
 }
-#careers .position.isExpanded .content {
-	max-height: 400vh;
-	opacity: 1;
-	padding-top: 1rem;
-}
-@media screen and (min-width: 480px) {
-	#careers .position.isExpanded .content {
-		max-height: 200vh;
+@media screen and (min-width: 769px) {
+	#careers .dialog-wrapper {
+		padding: 7rem 18rem 0 7rem;
 	}
 }
-#careers .position .content p, ul, ol  {
+body.dialogIsActive #careers .dialog-wrapper {
+	opacity: 1;
+	pointer-events: all;
+}
+#careers .dialog-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+	background: rgba(21, 26, 32, 0.2);
+}
+#careers .dialog {
+	position: absolute;
+	z-index: 6;
+	/*bottom: 0;
+	left: 0;*/
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 2rem;
+	overflow: auto;
+	transform: translateY(4rem);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 769px) {
+	#careers .dialog {
+		max-width: calc(100vw - 25rem);
+	}
+}
+#careers .dialog.isActive {
+	position: relative;
+	transform: translateY(0);
+	opacity: 1;
+}
+#careers .dialog .logo {
+	height: 2rem;
+	margin: 0.25rem 0 1rem;
+	opacity: 0.15;
+}
+#careers .dialog h4 { margin-bottom: 2rem; }
+/*@media screen and (max-width: 480px) {
+	#careers .dialog p {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+}*/
+#careers .dialog .content p, ul, ol  {
 	max-width: 40rem;
 	margin-bottom: 1rem;
 	letter-spacing: 0.03rem;
@@ -662,11 +735,50 @@ section#partners:before {
 	opacity: 0.8;
 }
 @media screen and (min-width: 360px) {
-	#careers .position .content p, ul, ol { font-size: 1.125rem; line-height: 1.75rem; }
+	#careers .dialog .content p, ul, ol { font-size: 1.125rem; line-height: 1.75rem; }
 }
-#careers .position .content ul, ol {
+#careers .dialog .content ul, ol {
 	padding-left: 1.5rem;
 	list-style: disc;
+}
+
+#careers .dialog-close {
+	position: fixed;
+	right: 1.5rem;
+	top: 5.5rem;
+	z-index: 7;
+	display: inline-block;
+	padding: 1rem;
+	width: 3rem;
+	height: 3rem;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+	#careers .dialog-close {
+		top: 8.5rem;
+		right: 19.5rem;
+	}
+}
+#careers .dialog-close:active, #careers .dialog-close:focus { outline: none; }
+#careers .dialog-close:before,
+#careers .dialog-close:after {
+	content: "";
+	position: absolute;
+	top: 0.75rem;
+	left: 0.75rem;
+	width: 2.25rem;
+	height: 2px;
+	background: #D19F33;
+	transform-origin: top left;
+	transform: rotate(45deg);
+}
+#careers .dialog-close:after {
+	left: auto;
+	right: 0.75rem;
+	transform-origin: top right;
+	transform: rotate(-45deg);
 }
 
 
@@ -696,10 +808,10 @@ section#partners:before {
 	font-size: 0.875rem;
 	color: rgba(21, 26, 31, 0.5);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	#get-in-touch .colophon {
-		margin: 6rem -20rem -7rem -7rem;
-		padding: 1rem 20rem 1rem 7rem;
+		margin: 6rem -18rem -7rem -7rem;
+		padding: 1rem 18rem 1rem 7rem;
 	}
 }
 
@@ -711,9 +823,20 @@ section#partners:before {
 	border: none;
 	box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
 	transition: box-shadow 0.2s ease-in-out;
+	font: inherit;
 	font-weight: 500;
 }
 .button:hover {
 	background: #f5f6f7;
 	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.button--outline {
+	border: 1px solid #D19F33;
+	background: white;
+	color: #D19F33;
+}
+.button.button--outline:hover {
+	border-bottom-width: 1px;
+	background: white;
 }
