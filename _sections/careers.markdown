@@ -2,8 +2,8 @@
 title: Careers
 order: 6
 date: 2019-11-06T12:00:00.000+00:00
-highlight: Be part of our mission
-text: We're growing and actively looking for ambitious and talented people who would like to join us in our mission. Check the open positions below or send us a unsolicited application.
+highlight: Be a part of our mission
+text: We’re growing and actively looking for ambitious and talented people who would like to join us in our mission. Check the open positions below or send us an unsolicited application.
 apply_email: contact@harvest-mobile.com
 positions:
 - title: Business Development Manager (remote)
