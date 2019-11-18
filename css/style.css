@@ -32,6 +32,10 @@ body, html {
 	background: #f5f6f7;
 	font-family: "Times", "Times New Roman", serif;
 	font-weight: normal;
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -165,7 +169,7 @@ strong {
 	list-style: none;
 	line-height: 2rem;
 	font-size: 1.125rem;
-	font-weight: normal;
+	font-weight: 500;
 	/*color: #fff;
 	opacity: 0.5;*/
 }
@@ -621,6 +625,8 @@ section#partners:before {
 	margin: 1px 0;
 	background: white;
 	cursor: pointer;
+	box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
+	transition: box-shadow 0.2s ease-in-out;
 }
 @media screen and (min-width: 480px) {
 	#careers .position { flex: 0 1 calc(50% - 1rem); margin: 0.5rem; }
@@ -636,6 +642,7 @@ section#partners:before {
 }
 #careers .position:not(.isExpanded):hover {
 	background: #FBFBFC;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 #careers .position:after {
 	content: "";
@@ -656,7 +663,7 @@ section#partners:before {
 	transform: rotate(225deg);
 }
 #careers .position.position--empty:after { display: none; }
-#careers .position h4 { font-size: 1.125rem; }
+#careers .position h4 { font-size: 1.25rem; line-height: 1.5rem; font-weight: 500; }
 
 
 /* Dialog */
@@ -827,8 +834,8 @@ body.dialogIsActive #careers .dialog-wrapper {
 	font-weight: 500;
 }
 .button:hover {
-	background: #f5f6f7;
-	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+	background: #FBFBFC;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 .button--outline {

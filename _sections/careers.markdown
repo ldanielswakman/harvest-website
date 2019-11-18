@@ -6,7 +6,7 @@ highlight: Be a part of our mission
 text: We’re growing and actively looking for ambitious and talented people who would like to join us in our mission. Check the open positions below or send us an unsolicited application.
 apply_email: contact@harvest-mobile.com
 positions:
-- title: Business Development Manager (remote)
+- title: Account Manager - Performance Marketing (remote)
   text: |-
     **Harvest** is a mobile performance marketing agency started by a team of industry experts who saw a need in the industry for a more strict approach to client services and traffic quality.
 
