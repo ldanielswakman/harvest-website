@@ -71,7 +71,7 @@ positions:
   text: "**Harvest** is a mobile performance marketing agency started by a team of
     industry experts who saw a need in the industry for a more strict approach to
     client services and traffic quality.\n\nWe currently focus our media buying efforts
-    on providing user acqusition to mobile apps. However, we are expanding into new
+    on providing user acquisition to mobile apps. However, we are expanding into new
     verticals within the mobile performance marketing industry and we're looking for
     additional, creative team members to create that future together.\n\n**Harvest**
     members work remotely from various locations in USA & UK/Germany based on flexible
