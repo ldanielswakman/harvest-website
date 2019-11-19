@@ -28,7 +28,7 @@ positions:
     (minimum one year)\n* Ability to work independently just as well as a part of
     a bigger team\n* Basic knowledge of sales procedures and CRMs\n* Superior communication
     and great presentation skills\n* Strong personal network would be a big plus\n*
-    Fluent English, additional languages are a plus\n* Well-travelled, open minded
+    Fluent English, additional languages are a plus\n* Well-travelled, open-minded
     and outgoing personality\n* On top of current industry trends\n\n**  \nWhat we
     offer**\n\n* Flexible working conditions - work from any location and manage your
     own time!\n* Flat and transparent hirarchy - you learn from everyone on the team
@@ -37,41 +37,35 @@ positions:
     We grow with you - we're open to your suggestions and new business ideas"
   is_visible: true
 - title: Mobile Media Buyer (remote)
-  text: |-
-    **Harvest** is a mobile performance marketing agency started by a team of industry experts who saw a need in the industry for a more strict approach to client services and traffic quality.
-
-    We currently focus our media buying efforts on providing user acqusition to mobile apps. However, we are expanding into new verticals within the mobile performance marketing industry and we're looking for additional, creative team members to create that future together.
-
-    **Harvest** members work remotely from various locations in USA & UK/Germany based on flexible conditions and strong teamwork. If you're looking to grow a new startup while working from any location in the world on your own terms, this will be a great fit for you.
-
-    **Your tasks**
-
-    * Daily setup and management of media buying for various performance marketing campaigns
-    * ROI oriented optimization of traffic, user retention and costs
-    * Managing activity on several traffic sources and actively testing new ones on CPC/CPM model
-    * Suggesting new traffic sources with good ROI potential and making sure it meets the demand of our clients
-    * Actively testing new sources and verticals
-    * Staying within designated budgets and optimizing our profit margin
-    * Seting up S2S tracking between all of our platforms and ensuring that all data is gathered correctly
-
-    **Your profile**
-
-    * Relevant experience in performance marketing (minimum one year)
-    * Familiar with DSP/SSP ecosystem and RTB media buying
-    * Experience with a wide range of traffic sources preferred with a focus on display, video, native and similar
-    * Analytical and numbers oriented
-    * Able to quickly calculate and report ROI and overal daily performance. Well organized
-    * You are cost efficient and understand how to make your campaigns profitable
-    * Team player and efficient at quickly reporting and communicating status of each campaign
-    * Expert in mobile tracking
-
-    **What we offer**
-
-    * Flexible working conditions - work from any location and manage your own time!
-    * Flat and transparent hirarchy - you learn from everyone on the team and your tasks can be very varied
-    * We cover any additional costs of travel, software and hardware needed
-    * Competitive compensation and bonus structure
-    * We grow with you - we're open to your suggestions and any new business ideas
+  text: "**Harvest** is a mobile performance marketing agency started by a team of
+    industry experts who saw a need in the industry for a more strict approach to
+    client services and traffic quality.\n\nWe currently focus our media buying efforts
+    on providing user acquisition to mobile apps. However, we are expanding into new
+    verticals within the mobile performance marketing industry and we're looking for
+    additional, creative team members to create that future together.\n\n**Harvest**
+    members work remotely from various locations in USA & UK/Germany based on flexible
+    conditions and strong teamwork. If you're looking to grow a new startup while
+    working from any location in the world on your own terms, this will be a great
+    fit for you.\n\n**  \nYour tasks**\n\n* Daily setup and management of media buying
+    for various performance marketing campaigns\n* ROI oriented optimization of traffic,
+    user retention and costs\n* Managing activity on several traffic sources and actively
+    testing new ones on CPC/CPM model\n* Suggesting new traffic sources with good
+    ROI potential and making sure it meets the demand of our clients\n* Actively testing
+    new sources and verticals\n* Staying within designated budgets and optimizing
+    our profit margin\n* Setting up S2S tracking between all of our platforms and
+    ensuring that all data is gathered correctly\n\n**  \nYour profile**\n\n* Relevant
+    experience in performance marketing (minimum one year)\n* Familiar with DSP/SSP
+    ecosystem and RTB media buying\n* Experience with a wide range of traffic sources
+    preferred with a focus on display, video, native and similar\n* Analytical and
+    numbers-oriented\n* Able to quickly calculate and report ROI and overall daily
+    performance. Well organized\n* You are cost-efficient and understand how to make
+    your campaigns profitable\n* Team player and efficient at quickly reporting and
+    communicating the status of each campaign\n* Expert in mobile tracking\n\n**What
+    we offer**\n\n* Flexible working conditions - work from any location and manage
+    your own time!\n* Flat and transparent hierarchy - you learn from everyone on
+    the team and your tasks can be very varied\n* We cover any additional costs of
+    travel, software and hardware needed\n* Competitive compensation and bonus structure\n*
+    We grow with you - we're open to your suggestions and any new business ideas"
   is_visible: true
 - title: Business Development Manager (remote)
   text: |-
