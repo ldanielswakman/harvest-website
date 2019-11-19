@@ -46,14 +46,14 @@ positions:
     members work remotely from various locations in USA & UK/Germany based on flexible
     conditions and strong teamwork. If you're looking to grow a new startup while
     working from any location in the world on your own terms, this will be a great
-    fit for you.\n\n**  \nYour tasks**\n\n* Daily setup and management of media buying
+    fit for you.\n\n  \n**Your tasks**\n\n* Daily setup and management of media buying
     for various performance marketing campaigns\n* ROI oriented optimization of traffic,
     user retention and costs\n* Managing activity on several traffic sources and actively
     testing new ones on CPC/CPM model\n* Suggesting new traffic sources with good
     ROI potential and making sure it meets the demand of our clients\n* Actively testing
     new sources and verticals\n* Staying within designated budgets and optimizing
     our profit margin\n* Setting up S2S tracking between all of our platforms and
-    ensuring that all data is gathered correctly\n\n**  \nYour profile**\n\n* Relevant
+    ensuring that all data is gathered correctly\n\n  \n**Your profile**\n\n* Relevant
     experience in performance marketing (minimum one year)\n* Familiar with DSP/SSP
     ecosystem and RTB media buying\n* Experience with a wide range of traffic sources
     preferred with a focus on display, video, native and similar\n* Analytical and
