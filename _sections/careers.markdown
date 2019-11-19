@@ -18,7 +18,7 @@ positions:
     members work remotely from various locations in the USA & UK/Germany based on
     flexible conditions and strong teamwork. If you're looking to grow a new startup
     while working from any location in the world on your own terms, this will be a
-    great fit for you.\n\n  \n**Your tasks**\n\n* Identifying new leads and opportunities\n*
+    great fit for you.\n\n**Your tasks**\n\n* Identifying new leads and opportunities\n*
     Closing new advertising deals and maintaining a strong pipeline of accounts coming
     in\n* Maintaining existing business and relationships with your contacts\n* Representing
     **Harvest** at international industry trade shows and networking events\n* Supporting
