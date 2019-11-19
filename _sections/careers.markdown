@@ -23,10 +23,10 @@ positions:
     in\n* Maintaining existing business and relationships with your contacts\n* Representing
     **Harvest** at international industry trade shows and networking events\n* Supporting
     the team as a part of additional projects\n* Presenting our product's value to
-    the clients and being able to provide them with technical feedback when requested\n\n
-    \ \n**Your profile**\n\n* Relevant experience within the mobile marketing industry
-    (minimum one year)\n* Ability to work independently just as well as a part of
-    a bigger team\n* Basic knowledge of sales procedures and CRMs\n* Superior communication
+    the clients and being able to provide them with technical feedback when requested\n\n**Your
+    profile**\n\n* Relevant experience within the mobile marketing industry (minimum
+    one year)\n* Ability to work independently just as well as a part of a bigger
+    team\n* Basic knowledge of sales procedures and CRMs\n* Superior communication
     and great presentation skills\n* A strong personal network would be a big plus\n*
     Fluent English, additional languages are a plus\n* Well-travelled, open-minded
     and outgoing personality\n* On top of current industry trends\n\n  \n**What we
