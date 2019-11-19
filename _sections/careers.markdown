@@ -18,21 +18,21 @@ positions:
     members work remotely from various locations in USA & UK/Germany based on flexible
     conditions and strong teamwork. If you're looking to grow a new startup while
     working from any location in the world on your own terms, this will be a great
-    fit for you.\n\n**  \nYour tasks**\n\n* Identifying new leads and opportunities\n*
+    fit for you.\n\n  \n\\**Your tasks**\n\n* Identifying new leads and opportunities\n*
     Closing new advertising deals and maintaining a strong pipeline of accounts coming
     in\n* Maintaining existing business and relationships with your contacts\n* Representing
     **Harvest** at international industry trade shows and networking events\n* Supporting
     the team as a part of additional projects\n* Presenting our product's value to
-    the clients and being able to provide them with technical feedback when requested\n\n**
-    \ \nYour profile**\n\n* Relevant experience within the mobile marketing industry
+    the clients and being able to provide them with technical feedback when requested\n\n
+    \ \n\\**Your profile**\n\n* Relevant experience within the mobile marketing industry
     (minimum one year)\n* Ability to work independently just as well as a part of
     a bigger team\n* Basic knowledge of sales procedures and CRMs\n* Superior communication
     and great presentation skills\n* Strong personal network would be a big plus\n*
     Fluent English, additional languages are a plus\n* Well-travelled, open-minded
-    and outgoing personality\n* On top of current industry trends\n\n**  \nWhat we
-    offer**\n\n* Flexible working conditions - work from any location and manage your
-    own time!\n* Flat and transparent hirarchy - you learn from everyone on the team
-    and your tasks can be very varied\n* We cover any additional costs of travel,
+    and outgoing personality\n* On top of current industry trends\n\n  \n\\**What
+    we offer**\n\n* Flexible working conditions - work from any location and manage
+    your own time!\n* Flat and transparent hirarchy - you learn from everyone on the
+    team and your tasks can be very varied\n* We cover any additional costs of travel,
     software and hardware needed\n* Competitive compensation and bonus structure\n*
     We grow with you - we're open to your suggestions and new business ideas"
   is_visible: true
