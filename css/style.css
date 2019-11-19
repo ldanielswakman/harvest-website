@@ -745,7 +745,7 @@ body.dialogIsActive #careers .dialog-wrapper {
 	#careers .dialog .content p, ul, ol { font-size: 1.125rem; line-height: 1.75rem; }
 }
 #careers .dialog .content ul, ol {
-	margin-bottom: -0.875rem;
+	margin-top: -0.875rem;
 	padding-left: 1.5rem;
 	list-style: disc;
 }
