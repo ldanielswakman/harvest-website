@@ -9,32 +9,40 @@ text: We’re growing and actively looking for ambitious and talented people who
 apply_email: contact@harvest-mobile.com
 positions:
 - title: Account Manager - Performance Marketing (remote)
-  text: "**Harvest** is a mobile performance marketing agency started by a team of
-    industry experts who saw a need in the industry for a more strict approach to
-    client services and traffic quality.\n\nWe currently focus our media buying efforts
-    on providing user acquisition to mobile apps. However, we are expanding into new
-    verticals within the mobile performance marketing industry and we're looking for
-    additional, creative team members to create that future together.\n\n**Harvest**
-    members work remotely from various locations in the USA & UK/Germany based on
-    flexible conditions and strong teamwork. If you're looking to grow a new startup
-    while working from any location in the world on your own terms, this will be a
-    great fit for you.\n\n**Your tasks**\n\n* Identifying new leads and opportunities\n*
-    Closing new advertising deals and maintaining a strong pipeline of accounts coming
-    in\n* Maintaining existing business and relationships with your contacts\n* Representing
-    **Harvest** at international industry trade shows and networking events\n* Supporting
-    the team as a part of additional projects\n* Presenting our product's value to
-    the clients and being able to provide them with technical feedback when requested\n\n**Your
-    profile**\n\n* Relevant experience within the mobile marketing industry (minimum
-    one year)\n* Ability to work independently just as well as a part of a bigger
-    team\n* Basic knowledge of sales procedures and CRMs\n* Superior communication
-    and great presentation skills\n* A strong personal network would be a big plus\n*
-    Fluent English, additional languages are a plus\n* Well-travelled, open-minded
-    and outgoing personality\n* On top of current industry trends\n\n  \n**What we
-    offer**\n\n* Flexible working conditions - work from any location and manage your
-    own time!\n* Flat and transparent hierarchy - you learn from everyone on the team
-    and your tasks can be very varied\n* We cover any additional costs of travel,
-    software and hardware needed\n* Competitive compensation and bonus structure\n*
-    We grow with you - we're open to your suggestions and new business ideas"
+  text: |-
+    **Harvest** is a mobile performance marketing agency started by a team of industry experts who saw a need in the industry for a more strict approach to client services and traffic quality.
+
+    We currently focus our media buying efforts on providing user acquisition to mobile apps. However, we are expanding into new verticals within the mobile performance marketing industry and we're looking for additional, creative team members to create that future together.
+
+    **Harvest** members work remotely from various locations in the USA & UK/Germany based on flexible conditions and strong teamwork. If you're looking to grow a new startup while working from any location in the world on your own terms, this will be a great fit for you.
+
+    **Your tasks**
+
+    * Identifying new leads and opportunities
+    * Closing new advertising deals and maintaining a strong pipeline of accounts coming in
+    * Maintaining existing business and relationships with your contacts
+    * Representing **Harvest** at international industry trade shows and networking events
+    * Supporting the team as a part of additional projects
+    * Presenting our product's value to the clients and being able to provide them with technical feedback when requested
+
+    **Your profile**
+
+    * Relevant experience within the mobile marketing industry (minimum one year)
+    * Ability to work independently just as well as a part of a bigger team
+    * Basic knowledge of sales procedures and CRMs
+    * Superior communication and great presentation skills
+    * A strong personal network would be a big plus
+    * Fluent English, additional languages are a plus
+    * Well-travelled, open-minded and outgoing personality
+    * On top of current industry trends
+
+    **What we offer**
+
+    * Flexible working conditions - work from any location and manage your own time!
+    * Flat and transparent hierarchy - you learn from everyone on the team and your tasks can be very varied
+    * We cover any additional costs of travel, software and hardware needed
+    * Competitive compensation and bonus structure
+    * We grow with you - we're open to your suggestions and new business ideas
   is_visible: true
 - title: Mobile Media Buyer (remote)
   text: "**Harvest** is a mobile performance marketing agency started by a team of
