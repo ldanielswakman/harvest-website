@@ -46,7 +46,7 @@ positions:
     members work remotely from various locations in USA & UK/Germany based on flexible
     conditions and strong teamwork. If you're looking to grow a new startup while
     working from any location in the world on your own terms, this will be a great
-    fit for you.\n\n  \n**Your tasks**\n\n* Daily setup and management of media buying
+    fit for you.\n\n**Your tasks**\n\n* Daily setup and management of media buying
     for various performance marketing campaigns\n* ROI oriented optimization of traffic,
     user retention and costs\n* Managing activity on several traffic sources and actively
     testing new ones on CPC/CPM model\n* Suggesting new traffic sources with good
