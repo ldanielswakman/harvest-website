@@ -1,7 +1,6 @@
 ---
 label: Careers
 hide_body: true
-hidden: true
 fields:
 - type: text
   label: Title
