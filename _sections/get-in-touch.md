@@ -1,7 +1,7 @@
 ---
 title: Get in touch
 order: 7
-date: 2018-07-16 12:00:00 +0000
+date: '2018-07-16 12:00:00 +0000'
 highlight: We’d love to hear your story
 email: contact@harvest-mobile.com
 address: |-
@@ -9,9 +9,10 @@ address: |-
   19C Trolley Square<br>
   Wilmington, DE 19806<br>
   United States
-linkedin_url: https://www.linkedin.com/company/harvest-mobile/
-
+linkedin_url: 'https://www.linkedin.com/company/harvest-mobile/'
+_template: get_in_touch
 ---
+
 <div class="row">
   <div class="col-xs-12 col-sm-7">
     <blockquote><p>{{ page.highlight }}</p></blockquote>
