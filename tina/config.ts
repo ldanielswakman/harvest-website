@@ -38,6 +38,7 @@ export default defineConfig({
         templates: [
           {
             fields: [
+              ...careersFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -45,13 +46,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...careersFields(),
             ],
             label: "careers",
             name: "careers",
           },
           {
             fields: [
+              ...get_in_touchFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -59,13 +60,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...get_in_touchFields(),
             ],
             label: "get-in-touch",
             name: "get_in_touch",
           },
           {
             fields: [
+              ...introFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -73,13 +74,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...introFields(),
             ],
             label: "intro",
             name: "intro",
           },
           {
             fields: [
+              ...partnersFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -87,13 +88,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...partnersFields(),
             ],
             label: "partners",
             name: "partners",
           },
           {
             fields: [
+              ...servicesFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -101,13 +102,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...servicesFields(),
             ],
             label: "services",
             name: "services",
           },
           {
             fields: [
+              ...storyFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -115,13 +116,13 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...storyFields(),
             ],
             label: "story",
             name: "story",
           },
           {
             fields: [
+              ...updatesFields(),
               {
                 type: "rich-text",
                 name: "body",
@@ -129,7 +130,6 @@ export default defineConfig({
                 description: "This is the markdown body",
                 isBody: true,
               },
-              ...updatesFields(),
             ],
             label: "updates",
             name: "updates",

@@ -6,6 +6,7 @@ export function careersFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -71,6 +72,7 @@ export function get_in_touchFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -115,6 +117,7 @@ export function introFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -146,6 +149,7 @@ export function partnersFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -198,6 +202,7 @@ export function servicesFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -250,6 +255,7 @@ export function storyFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
@@ -284,6 +290,7 @@ export function updatesFields() {
       name: "title",
       label: "Title",
       required: true,
+      isTitle: true,
     },
     {
       type: "number",
