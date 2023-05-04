@@ -10,7 +10,7 @@ updates:
       26 and 27! Come and find us and say hello. Find out more on the conference
       here.
     date: '2018-07-18 12:00:00 +0000'
-published: true
+published: false
 _template: updates
 ---
 
