@@ -3,9 +3,7 @@
 
 	{% include head.html %}
 
-  <body>
-
-    {% include nav.html %}
+  <body id="top">
 
     {% assign sections = site.sections | sort: 'order' %}
     {% assign i = 0 %}
@@ -26,6 +24,11 @@
           {% endif %}
           
         </section>
+
+        {% if section.slug == 'intro' %}
+          {% include nav.html %}
+        {% endif %}
+
       {% endunless %}
       
     {% endfor %}
