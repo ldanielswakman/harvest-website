@@ -4,6 +4,7 @@ import { get_in_touchFields } from "./templates";
 import { introFields } from "./templates";
 import { partnersFields } from "./templates";
 import { servicesFields } from "./templates";
+import { projectsFields } from "./templates";
 import { storyFields } from "./templates";
 import { updatesFields } from "./templates";
 
@@ -40,98 +41,168 @@ export default defineConfig({
             fields: [
               ...careersFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "careers",
+            label: "Careers",
             name: "careers",
           },
           {
             fields: [
               ...get_in_touchFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "get-in-touch",
+            label: "Get in touch",
             name: "get_in_touch",
           },
           {
             fields: [
               ...introFields(),
-              {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
-              },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "intro",
+            label: "Intro",
             name: "intro",
           },
           {
             fields: [
               ...partnersFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "partners",
+            label: "Partners",
             name: "partners",
           },
           {
             fields: [
               ...servicesFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "services",
+            label: "Services",
             name: "services",
+          },
+          {
+            fields: [
+              ...projectsFields(),
+              {
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
+              },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
+            ],
+            label: "Projects",
+            name: "projects",
           },
           {
             fields: [
               ...storyFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "story",
+            label: "Story",
             name: "story",
           },
           {
             fields: [
               ...updatesFields(),
               {
-                type: "rich-text",
-                name: "body",
-                label: "Body of Document",
-                description: "This is the markdown body",
-                isBody: true,
+                type: 'boolean',
+                name: 'published',
+                label: 'Published',
+                ui: {
+                  description: 'Check to turn this section on/off',
+                }
               },
+              // {
+              //   type: "rich-text",
+              //   name: "body",
+              //   label: "Body of Document",
+              //   description: "This is the markdown body",
+              //   isBody: true,
+              // },
             ],
-            label: "updates",
+            label: "Updates",
             name: "updates",
           },
         ],

@@ -58,11 +58,6 @@ export function careersFields() {
         },
       ],
     },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
-    },
   ] as TinaField[];
 }
 export function get_in_touchFields() {
@@ -103,11 +98,6 @@ export function get_in_touchFields() {
       name: "linkedin_url",
       label: "Linkedin URL",
     },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
-    },
   ] as TinaField[];
 }
 export function introFields() {
@@ -129,11 +119,6 @@ export function introFields() {
       type: "string",
       name: "tagline",
       label: "Tagline",
-    },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
     },
     {
       type: "string",
@@ -175,11 +160,18 @@ export function partnersFields() {
       name: "industries",
       label: "Industries",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}`}
+        },
+      },
       fields: [
         {
           type: "string",
           name: "title",
           label: "Title",
+          required: true,
+          isTitle: true,
         },
         {
           type: "string",
@@ -187,11 +179,6 @@ export function partnersFields() {
           label: "Text",
         },
       ],
-    },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
     },
   ] as TinaField[];
 }
@@ -228,11 +215,65 @@ export function servicesFields() {
       name: "services",
       label: "Services",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}`}
+        },
+      },
       fields: [
         {
           type: "string",
           name: "title",
           label: "Title",
+          required: true,
+          isTitle: true,
+        },
+        {
+          type: "string",
+          name: "text",
+          label: "Text",
+        },
+      ],
+    },
+  ] as TinaField[];
+}
+export function projectsFields() {
+  return [
+    {
+      type: "string",
+      name: "title",
+      label: "Title",
+      required: true,
+      isTitle: true,
+    },
+    {
+      type: "number",
+      name: "order",
+      label: "Order",
+      required: true,
+    },
+    {
+      type: "object",
+      name: "projects",
+      label: "Projects",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}`}
+        },
+      },
+      fields: [
+        {
+          type: "image",
+          name: "image",
+          label: "Project Image",
+        },
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+          required: true,
+          isTitle: true,
         },
         {
           type: "string",
@@ -242,9 +283,17 @@ export function servicesFields() {
       ],
     },
     {
-      type: "datetime",
-      name: "date",
-      label: "date",
+      type: "string",
+      name: "highlight",
+      label: "Highlight",
+    },
+    {
+      type: "string",
+      name: "text",
+      label: "Text",
+      ui: {
+        component: "textarea",
+      },
     },
   ] as TinaField[];
 }
@@ -276,11 +325,6 @@ export function storyFields() {
         component: "textarea",
       },
     },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
-    },
   ] as TinaField[];
 }
 export function updatesFields() {
@@ -303,6 +347,11 @@ export function updatesFields() {
       name: "updates",
       label: "Updates",
       list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}`}
+        },
+      },
       fields: [
         {
           type: "string",
@@ -323,11 +372,6 @@ export function updatesFields() {
           label: "date",
         },
       ],
-    },
-    {
-      type: "datetime",
-      name: "date",
-      label: "date",
     },
   ] as TinaField[];
 }
