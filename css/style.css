@@ -163,6 +163,9 @@ strong {
 	top: 0;
 	z-index: 2;
 	background: #1C2229;
+	background: rgba(28, 34, 41, 0.8);
+	background: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(8px);
 	display: flex;
 	justify-content: space-between;
 	padding: 0 1rem;
@@ -349,7 +352,7 @@ section {
 }
 @media screen and (min-width: 769px) {
 	section {
-		padding: 7rem 18rem 7rem 7rem;
+		padding: 7rem;
 	}
 }
 section p {
@@ -593,6 +596,23 @@ section#services:before {
 		width: 80%;
 		height: 40%;
 	}
+}
+
+
+
+/* Section-specific: #projects */
+#projects .project {
+	position: relative;
+	flex: 0 1 100%;
+	padding: 1.25rem 2rem;
+	background: white;
+	cursor: pointer;
+	box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
+	transition: box-shadow 0.2s ease-in-out;
+}
+#projects .project:hover {
+	background: #FBFBFC;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 

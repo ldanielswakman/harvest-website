@@ -1,6 +1,6 @@
 ---
 title: Careers
-order: 6
+order: 7
 date: 2019-11-06T12:00:00.000Z
 highlight: Be a part of our mission
 text: >-
@@ -239,6 +239,7 @@ positions:
       * We grow with you - we're open to your suggestions and new business ideas
     is_visible: true
 _template: careers
+published: true
 ---
 
 <div class="row">

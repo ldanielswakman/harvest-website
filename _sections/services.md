@@ -22,6 +22,7 @@ services:
       Impression tracking, video ads, native ads, full transparency - you name
       it, we do it for you
 _template: services
+published: true
 ---
 
 <div class="row">

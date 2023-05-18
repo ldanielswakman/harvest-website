@@ -1,6 +1,6 @@
 ---
 title: Get in touch
-order: 7
+order: 8
 date: '2018-07-16 12:00:00 +0000'
 highlight: We’d love to hear your story
 email: contact@harvest-mobile.com
@@ -11,6 +11,7 @@ address: |-
   United States
 linkedin_url: 'https://www.linkedin.com/company/harvest-mobile/'
 _template: get_in_touch
+published: true
 ---
 
 <div class="row">
