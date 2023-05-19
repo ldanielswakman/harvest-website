@@ -6,7 +6,7 @@ highlight: null
 text: null
 projects:
   - image: /images/project-hbo-max.png
-    title: HBO Maxx
+    title: HBO Max
     text: >-
       Thousands of new subscribers and hundreds of thousands of new installs
       generated within 6 months in LATAM markets through Harvest’s managed media
@@ -24,6 +24,7 @@ projects:
 published: true
 _template: projects
 ---
+
 
 
 {% if page.highlight != null and page.text != null %}
