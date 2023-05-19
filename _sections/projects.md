@@ -1,12 +1,12 @@
 ---
 title: Projects
 order: 4
-date: 2023-05-17T22:00:00.000Z
+date: '2023-05-17T22:00:00.000Z'
 highlight: null
 text: null
 projects:
   - image: /images/project-hbo-max.png
-    title: HBO Max
+    title: HBO Maxx
     text: >-
       Thousands of new subscribers and hundreds of thousands of new installs
       generated within 6 months in LATAM markets through Harvest’s managed media
@@ -21,9 +21,10 @@ projects:
     text: >-
       100k new users in one month achieved through a mix of native traffic,
       Google app promotion and influencer marketing on Twitch
-_template: projects
 published: true
+_template: projects
 ---
+
 
 {% if page.highlight != null and page.text != null %}
 <div class="row">
