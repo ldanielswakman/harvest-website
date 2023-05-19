@@ -868,6 +868,67 @@ body.dialogIsActive #careers .dialog-wrapper {
 	}
 }
 
+#get-in-touch .form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+}
+#get-in-touch .form .field {
+	appearance: none;
+	width: 100%;
+	padding: 1rem 1.125rem;
+	background: white;
+	border: 2px solid transparent;
+	font: inherit;
+	line-height: 1.25rem;
+}
+#get-in-touch .form .field:hover {
+	background: #FBFBFC;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+#get-in-touch .form .field:focus {
+	outline: none;
+	border-color: #303846;
+	box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+#get-in-touch .form .field::placeholder,
+#get-in-touch select:invalid {
+	color: rgba(48, 56, 70, 0.3);
+}
+#get-in-touch .form textarea {
+	grid-column: -1 / 1;
+}
+#get-in-touch .field-select {
+	position: relative;
+}
+#get-in-touch .field-select:after {
+	content: "";
+	position: absolute;
+	top: 1rem;
+	right: 1.25rem;
+	width: 0.75rem;
+	height: 0.75rem;
+	border-right: 2px solid #D19F33;
+	border-bottom: 2px solid #D19F33;
+	transform: rotate(45deg);
+}
+#get-in-touch .button[type="submit"] {
+	margin-top: -4.5rem;
+	margin-right: 0.5rem;
+	grid-column: -1 / 1;
+	justify-self: end;
+}
+#get-in-touch .form-message {
+	grid-column: -1 / 1;
+	padding: 0.25rem 1rem;
+	background: #D19F33;
+	color: #151A1F;
+	opacity: 1;
+}
+
+
+
+
 .button {
 	display: inline-block;
 	background: #fff;
@@ -878,6 +939,7 @@ body.dialogIsActive #careers .dialog-wrapper {
 	transition: box-shadow 0.2s ease-in-out;
 	font: inherit;
 	font-weight: 500;
+	cursor: pointer;
 }
 .button:hover {
 	background: #FBFBFC;
@@ -892,4 +954,12 @@ body.dialogIsActive #careers .dialog-wrapper {
 .button.button--outline:hover {
 	border-bottom-width: 1px;
 	background: white;
+}
+
+.button.button--dark {
+	background: #151A1F;
+	color: #fff;
+}
+.button.button--dark:hover {
+	color: #D19F33;
 }
