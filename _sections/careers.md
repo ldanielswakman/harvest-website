@@ -266,7 +266,7 @@ published: true
   {% for position in page.positions %}
     {% unless position.is_visible == false %}
       <div id="{{ position.title | slugify }}" class="dialog">
-        <img src="{{ site.url }}/images/logo-black.svg" alt="" class="logo" />
+        <img src="{{ site.baseurl }}/images/logo-black.svg" alt="" class="logo" />
         <h4>{{ position.title }}</h4>
         <div class="content">
           {{ position.text | markdownify }}

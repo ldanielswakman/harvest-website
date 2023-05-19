@@ -44,7 +44,7 @@ _template: projects
 
 <div class="col-xs-12 col-sm-4">
   <div class="project">
-  <img src="{{ site.url }}{{ project.image }}" alt="" style="height: 4.5rem;" title="{{ project.title }}" />
+  <img src="{{ site.baseurl }}{{ project.image }}" alt="" style="height: 4.5rem;" title="{{ project.title }}" />
     <h4>{{ project.title }}</h4>
     {{ project.text | markdownify }}
   </div>
