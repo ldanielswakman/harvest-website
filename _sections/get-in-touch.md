@@ -15,17 +15,14 @@ published: true
 ---
 
 <div class="row">
-  <div class="col-xs-12 col-sm-4">
+  <div class="col-xs-12 col-md-4">
     <blockquote><p>{{ page.highlight }}</p></blockquote>
-    <a href="mailto:{{ page.email }}?subject=Inquiry" target="_blank" class="button">Say hi</a>
-
-    <br>
-    <p>{{ page.email }}</p>
-    <a href="{{ page.linkedin_url }}" target="_blank">LinkedIn</a>
-
+    <div class="u-mobile-hide">
+      <a class="footer-link" target="_blank" href="mailto:{{ page.email }}"><img src="{{ site.baseurl }}/images/icon-email.svg" /> {{ page.email }}</a>
+      <a class="footer-link" target="_blank" href="{{ page.linkedin_url }}"><img src="{{ site.baseurl }}/images/icon-linkedin.svg" /> {{ page.linkedin_url | replace: "https://www.linkedin.com/", ""  }}</a>
+    </div>
   </div>
-  <div class="col-xs-12 col-sm-8">
-
+  <div class="col-xs-12 col-md-8">  
     <form id="contact-form" class="form" action="https://formspree.io/f/moqzbgaj" method="POST">
       <input class="field" type="text" name="name" placeholder="Name" required />
       <input class="field" type="text" name="company" placeholder="Company" />
@@ -45,7 +42,6 @@ published: true
     <!-- Place this script at the end of the body tag -->
     <script>
         var form = document.getElementById("contact-form");
-        
         async function handleSubmit(event) {
           event.preventDefault();
           var status = document.getElementById("contact-form-status");
@@ -76,10 +72,18 @@ published: true
         form.addEventListener("submit", handleSubmit)
     </script>
   </div>
+  <div class="col-xs-12">
+    <div class="u-mobile-show">
+        <a class="footer-link" target="_blank" href="mailto:{{ page.email }}"><img src="{{ site.baseurl }}/images/icon-email.svg" /> {{ page.email }}</a>
+        <a class="footer-link" target="_blank" href="{{ page.linkedin_url }}"><img src="{{ site.baseurl }}/images/icon-linkedin.svg" /> {{ page.linkedin_url | replace: "https://www.linkedin.com/", ""  }}</a>
+    </div>
+  </div>
 </div>
 <div class="colophon">
   <div class="row">
     <div class="col-xs-12 col-sm-7">&copy; {{ "now" | date: "%Y" }} Harvest media LLC</div>
-    <div class="col-xs-12 col-sm-5">Design & Website by <a href="https://www.nartadalladaku.com/" target="_blank">Narta Dalladaku</a> / <a href="https://sincere.studio" target="_blank">Sincere—Studio</a></div>div>
+    <div class="col-xs-12 col-sm-5">
+      Design & Website by <a href="https://www.nartadalladaku.com/" target="_blank">Narta Dalladaku</a> / <a href="https://sincere.studio" target="_blank">Sincere—Studio</a>
+    </div>
   </div>
 </div>
