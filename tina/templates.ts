@@ -217,6 +217,11 @@ export function servicesFields() {
         },
         {
           type: "string",
+          name: "highlight",
+          label: "Highlight",
+        },
+        {
+          type: "string",
           name: "text",
           label: "Text",
         },
@@ -247,6 +252,9 @@ export function servicesFields() {
               type: "string",
               name: "text",
               label: "Text",
+              ui: {
+                component: "textarea",
+              },
             },
           ],
         },

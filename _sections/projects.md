@@ -38,11 +38,11 @@ _template: projects
 </div>
 {% endif %}
 
-<div class="row u-menu-paddding" style="margin-top: 6rem;">
+<div class="row u-menu-paddding" style="margin-top: 3rem;">
 
 {% for project in page.projects %}
 
-<div class="col-xs-12 col-sm-4">
+<div class="col-xs-12 col-sm-6 col-md-4">
   <div class="project">
   <img src="{{ site.baseurl }}{{ project.image }}" alt="" style="height: 4.5rem;" title="{{ project.title }}" />
     <h4>{{ project.title }}</h4>

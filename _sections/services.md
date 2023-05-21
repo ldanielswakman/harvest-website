@@ -90,8 +90,21 @@ chapters:
           Looking to create your own marketing team? We can help you set up the
           right strategy, procedures and train your team, while making sure your
           budget is spent efficiently.
-      - {}
-      - {}
+      - title: Expansion and improvement
+        image: /images/rich-icon-expand.svg
+        text: >-
+          Are you already active with your own marketing campaigns, but looking
+          for ways to get more out of them? Our team can help you find ways to
+          expand, improve and maximize the efficiency of your activities.
+      - title: General consulting
+        image: /images/rich-icon-consulting.svg
+        text: >-
+          In need of a brainstorming partner for your general strategy, market
+          positioning and next moves in growth marketing? Planning changes
+          within your team, or perhaps looking for the best way to find your
+          next investor?
+
+          Contact us to find out how we can help you with all of that.
 services:
   - title: Full 360 package
     image: /images/rich-icon-360.svg
@@ -129,13 +142,6 @@ published: true
 _template: services
 ---
 
-
-
-
-
-
-
-
 <div class="row">
   <div class="col-xs-12 col-sm-4 u-relative">
     <div class="services-menu">
@@ -153,8 +159,9 @@ _template: services
         <div id="chapter-{{ forloop.index }}" class="chapter {% if forloop.index == 1 %}isActive{% endif %}">
           {{ chapter.text | markdownify }}
           <div class="row services">
+            {% assign value = chapter.services.size | modulo:2 %}
             {% for service in chapter.services %}
-              <div class="col-xs-12 col-sm-6">
+              <div class="col-xs-12 {% if value == 0 %}col-sm-6{% endif %}">
                 <div class="item">
                   <img class="item-icon" src="{{ site.baseurl }}{{ service.image }}" alt="" style="height: 3rem;" title="{{ service.title }}" />
                   <h4>{{ service.title }}</h4>

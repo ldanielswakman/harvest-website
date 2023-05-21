@@ -81,6 +81,18 @@ function navOnScroll($target, $nav) {
 
 
 
+// Component: nav sticky after intro
+scrollevents = 'ready scroll resize scrollstart scrollstop';
+$(document).on(scrollevents, function() {
+  scroll = $(window).scrollTop();
+  if(scroll > $("#intro").outerHeight()) {
+    $('.nav').addClass('isSticky');
+  } else {
+    $('.nav').removeClass('isSticky');
+  }
+});
+
+
 
 
 

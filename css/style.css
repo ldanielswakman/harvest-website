@@ -173,7 +173,7 @@ strong {
 	z-index: 2;
 	background: #1C2229;
 	background: rgba(28, 34, 41, 0.8);
-	/* background: rgba(0, 0, 0, 0.8); */
+	/* background: transparent; */
 	backdrop-filter: blur(8px);
 	display: flex;
 	justify-content: space-between;
@@ -190,10 +190,18 @@ strong {
 		padding: 0 6rem;
 	}
 }
-
+.nav.isSticky {
+	/* background: rgba(28, 34, 41, 0.8); */
+	background: rgba(0, 0, 0, 0.8); 
+}
 .nav .monogram {
 	padding: 0.5rem;
 	border-bottom: none;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+.nav.isSticky .monogram {
+	opacity: 1;
 }
 .nav .monogram img {
 	display: block;
@@ -422,7 +430,7 @@ blockquote p {
 
 /* Section-specific: #intro */
 #intro {
-	height: calc(100vh - 3rem);
+	min-height: calc(100vh - 3rem);
 	padding: 10vw;
 	user-select: none;
 	background: #151A1F;
@@ -438,12 +446,14 @@ blockquote p {
 	left: 0;
 	z-index: 0;
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 3rem);
 }
-#intro .intro-link {
-	position: absolute;
-	bottom: 0;
-	left: 1rem;
+#intro .subtext {
+	margin: 1.5rem 0;
+	opacity: 1;
+	font-size: 1.5rem;
+	color: #F5F6F7;
+	opacity: 0.5;
 }
 #intro .intro-link a {
 	display: block;
@@ -451,12 +461,6 @@ blockquote p {
 	height: 4rem;
 	border: none;
 	text-decoration: none;
-}
-@media screen and (min-width: 769px) {
-	#intro .intro-link {
-		left: 50%;
-		margin-left: -1.25rem;
-	}
 }
 #intro .intro-link svg {
 	position: absolute;
@@ -583,15 +587,14 @@ blockquote p {
 	top: 5rem;
 	z-index: 3;
 	display: flex;
-	margin-bottom: 2rem;
-	/* padding-right: 2rem; */
+	flex-direction: column;
+	margin: 0 -0.5rem 4rem;
 	gap: 1rem;
-	overflow-x: auto;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 	#services .services-menu {
-		flex-direction: column;
-		gap: 0;
+		margin: 0;
+		padding-right: 1.5rem;
 	}
 }
 #services .services-menu .menu-item {
@@ -599,8 +602,13 @@ blockquote p {
 	border-left: 2px solid transparent;
 	opacity: 0.3;
 	cursor: pointer;
-	margin: 1rem;
 	min-width: 200px;
+}
+@media screen and (min-width: 768px) {
+	#services .services-menu .menu-item {
+		margin: 1rem;
+		margin-left: 0;
+	}
 }
 #services .services-menu .menu-item:hover {
 	opacity: 1;
@@ -621,9 +629,15 @@ blockquote p {
 	position: absolute;
 	top: -2rem;
 	bottom: -2rem;
-	left: -1rem;
-	right: -3rem;
+	left: -1.5rem;
+	right: -1.5rem;
 	background: #fff;
+}
+@media screen and (min-width: 768px) {
+	#services  .content-background {
+		left: -1rem;
+		right: -3rem;
+	}
 }
 #services .chapter {
 	display: none;
@@ -641,11 +655,22 @@ blockquote p {
 /* Section-specific: #projects */
 #projects .project {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	flex: 0 1 100%;
-	padding: 1.25rem 2rem;
+	gap: 1rem;
+	margin: 0 -2rem 1.25rem;
+	padding: 1.25rem 1.5rem;
 	background: white;
 	box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0);
 	transition: box-shadow 0.2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+	#projects .project {
+		min-height: calc(100% - 1.25rem);
+		margin: 0 0 1.25rem;
+	}
 }
 #projects .project:hover {
 	background: #FBFBFC;
@@ -654,11 +679,11 @@ blockquote p {
 
 
 
-/* Section-specific: #story */
-section#story {
-	margin-bottom: 8rem;
+/* Section-specific: #who-we-are */
+section#who-we-are {
+	margin-bottom: 3rem;
 }
-section#story:before {
+section#who-we-are:before {
 	content: "";
 	position: absolute;
 	top: 13rem;
@@ -668,9 +693,9 @@ section#story:before {
 	height: 60%;
 }
 @media screen and (min-width: 769px) {
-	section#story:before {
+	section#who-we-are:before {
 		top: 11rem;
-		width: 60%;
+		width: calc(100% - 3rem);
 		height: 66%;
 	}
 }
@@ -878,6 +903,7 @@ body.dialogIsActive #careers .dialog-wrapper {
 /* Section-specific: #get-in-touch */
 #get-in-touch {
 	background: #D7B15B;
+	overflow: hidden;
 }
 #get-in-touch blockquote {
 	margin-bottom: 2rem;
