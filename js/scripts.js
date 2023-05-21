@@ -83,6 +83,33 @@ function navOnScroll($target, $nav) {
 
 
 
+
+// Component: Services Section Menu
+$(document).ready(function() {
+  $('#services .services-menu .menu-item').click(function(e) {
+    e.preventDefault();
+    $target_id = "#" + $(this).attr('data-target');
+    console.log($target_id);
+    if($($target_id).length !== 0) {
+      $('#services .chapter').removeClass('isActive');
+      $('#services ' + $target_id).addClass('isActive');
+      
+      $('#services .services-menu .menu-item').removeClass('isActive');
+      $(this).addClass('isActive');
+      
+      $.smoothScroll({
+        scrollTarget: $('#services'),
+        easing: 'easeInOutQuart'
+      });
+    }
+  });
+});
+
+
+
+
+
+
 // Component: Career position interactions
 $(document).ready(function() {
 

@@ -198,6 +198,61 @@ export function servicesFields() {
       required: true,
     },
     {
+      type: "object",
+      name: "chapters",
+      label: "Chapters",
+      list: true,
+      ui: {
+        itemProps: (item) => {
+          return { label: `${item?.title}`}
+        },
+      },
+      fields: [
+        {
+          type: "string",
+          name: "title",
+          label: "Title",
+          required: true,
+          isTitle: true,
+        },
+        {
+          type: "string",
+          name: "text",
+          label: "Text",
+        },
+        {
+          type: "object",
+          name: "services",
+          label: "Services",
+          list: true,
+          ui: {
+            itemProps: (item) => {
+              return { label: `${item?.title}`}
+            },
+          },
+          fields: [
+            {
+              type: "string",
+              name: "title",
+              label: "Title",
+              required: true,
+              isTitle: true,
+            },
+            {
+              type: "image",
+              name: "image",
+              label: "Service image",
+            },
+            {
+              type: "string",
+              name: "text",
+              label: "Text",
+            },
+          ],
+        },
+      ],
+    },
+    {
       type: "string",
       name: "highlight",
       label: "Highlight",
@@ -227,6 +282,11 @@ export function servicesFields() {
           label: "Title",
           required: true,
           isTitle: true,
+        },
+        {
+          type: "image",
+          name: "image",
+          label: "Service image",
         },
         {
           type: "string",
@@ -266,7 +326,7 @@ export function projectsFields() {
         {
           type: "image",
           name: "image",
-          label: "Project Image",
+          label: "Project image",
         },
         {
           type: "string",
