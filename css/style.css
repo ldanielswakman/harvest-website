@@ -260,6 +260,7 @@ strong {
 	text-decoration: none;
 	border-bottom: none;
 	white-space: nowrap;
+	-webkit-tap-highlight-color: transparent;
 }
 .menu a:hover {
 	color: #fff;
@@ -431,10 +432,12 @@ blockquote p {
 /* Section-specific: #intro */
 #intro {
 	min-height: calc(100vh - 3rem);
-	padding: 10vw;
+	/* padding: 6rem; */
 	user-select: none;
 	background: #151A1F;
 	background: #1C2229; /* Increased contrast slightly */
+}
+@media screen and (min-width: 768px) {
 }
 #intro > * {
 	position: relative;
@@ -585,7 +588,7 @@ blockquote p {
 #services .services-menu {
 	position: sticky;
 	top: 5rem;
-	z-index: 3;
+	/* z-index: 3; */
 	display: flex;
 	flex-direction: column;
 	margin: 0 -0.5rem 4rem;
