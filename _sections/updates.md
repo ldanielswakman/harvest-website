@@ -1,16 +1,19 @@
 ---
 title: Latest
 order: 2
-date: 2018-07-16 12:00:00 +0000
+date: '2018-07-16 12:00:00 +0000'
 updates:
-- title: Harvest speaking at Digital Summit Chicago!
-  text: After a few days of negotiating, Harvest is proud to announce that they will
-    be giving a talk at Digital Summit, taking place in Chicago on Sept 26 and 27!
-    Come and find us and say hello. Find out more on the conference here.
-  date: 2018-07-18 12:00:00 +0000
+  - title: Harvest speaking at Digital Summit Chicago!
+    text: >-
+      After a few days of negotiating, Harvest is proud to announce that they
+      will be giving a talk at Digital Summit, taking place in Chicago on Sept
+      26 and 27! Come and find us and say hello. Find out more on the conference
+      here.
+    date: '2018-07-18 12:00:00 +0000'
 published: false
-
+_template: updates
 ---
+
 {% if page.updates != '' %}
 
 <div class="owl-carousel">

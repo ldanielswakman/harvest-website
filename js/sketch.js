@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background(21, 26, 31);
+  background(28, 34, 41);
   flock.run();
 }
 
