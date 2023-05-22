@@ -260,49 +260,6 @@ export function servicesFields() {
         },
       ],
     },
-    {
-      type: "string",
-      name: "highlight",
-      label: "Highlight",
-    },
-    {
-      type: "string",
-      name: "text",
-      label: "Text",
-      ui: {
-        component: "textarea",
-      },
-    },
-    {
-      type: "object",
-      name: "services",
-      label: "Services",
-      list: true,
-      ui: {
-        itemProps: (item) => {
-          return { label: `${item?.title}`}
-        },
-      },
-      fields: [
-        {
-          type: "string",
-          name: "title",
-          label: "Title",
-          required: true,
-          isTitle: true,
-        },
-        {
-          type: "image",
-          name: "image",
-          label: "Service image",
-        },
-        {
-          type: "string",
-          name: "text",
-          label: "Text",
-        },
-      ],
-    },
   ] as TinaField[];
 }
 export function projectsFields() {
