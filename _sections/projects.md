@@ -3,7 +3,7 @@ title: Projects
 order: 4
 date: '2023-05-17T22:00:00.000Z'
 highlight: null
-text: null
+text: Live! Testing.
 projects:
   - image: /images/project-hbo-max.png
     title: HBO Max
@@ -27,6 +27,7 @@ button_text: Download Media Kit
 button_target: ''
 _template: projects
 ---
+
 
 
 
