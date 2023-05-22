@@ -22,8 +22,14 @@ projects:
       100k new users in one month achieved through a mix of native traffic,
       Google app promotion and influencer marketing on Twitch
 published: true
+footer_text: 'For more information, download our Media Kit:'
+button_text: Download Media Kit
+button_target: ''
 _template: projects
 ---
+
+
+
 
 
 
@@ -52,3 +58,15 @@ _template: projects
 {% endfor %}
 
 </div>
+
+{% if page.button_target != '' and page.button_text != '' %}
+<div class="row u-menu-paddding">
+  <div class="col-xs-12 projects-footer">
+    <p>For more information, download our Media Kit:</p>
+    <a class="button" href="{{ site.baseURL }}{{ page.button_target }}" download title="{{ page.button_text }}">
+      {{ page.button_text }}
+      <img src="{{ site.baseURL }}/images/icon-download.svg" style="height: 1.75rem;" />
+    </a>
+  </div>
+</div>
+{% endif %}

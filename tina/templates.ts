@@ -320,6 +320,21 @@ export function projectsFields() {
         component: "textarea",
       },
     },
+    {
+      type: "string",
+      name: "footer_text",
+      label: "Footer Text",
+    },
+    {
+      type: "string",
+      name: "button_text",
+      label: "Button Text",
+    },
+    {
+      type: "image",
+      name: "button_target",
+      label: "Button target",
+    },
   ] as TinaField[];
 }
 export function storyFields() {
